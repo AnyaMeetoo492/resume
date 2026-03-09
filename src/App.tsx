@@ -20,7 +20,7 @@ import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
  *  - A two-column grid on desktop (main content left, sidebar right).
  *  - Stacked single column on mobile / print.
  *
- * Append `?download` to the URL to auto-generate and download the PDF
+ * Append `?download` to the URL to auto-open print flow
  * (e.g. `https://yoursite.com/?download`).
  */
 export default function App() {
@@ -36,7 +36,7 @@ export default function App() {
 
     hasAutoDownloaded.current = true;
 
-    // Short delay so fonts and images finish loading before capture.
+    // Short delay so fonts and layout fully settle before print.
     const timer = setTimeout(async () => {
       const page = document.querySelector(".page") as HTMLElement | null;
       if (!page) return;

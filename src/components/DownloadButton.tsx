@@ -10,12 +10,12 @@ interface DownloadButtonProps {
 }
 
 /**
- * Fixed floating button that generates a PDF from the rendered `.page`
- * element and triggers a browser download.
+ * Fixed floating button that opens the browser print dialog so users can
+ * save a text-selectable PDF with clickable links.
  *
  * - Bottom-right on desktop, icon-only on mobile.
  * - Hidden when printing (`print:hidden`).
- * - Shows a spinner while the PDF is being generated.
+ * - Shows a spinner while print flow is being prepared.
  */
 export function DownloadButton({ name }: DownloadButtonProps) {
   const [generating, setGenerating] = useState(false);
@@ -39,7 +39,7 @@ export function DownloadButton({ name }: DownloadButtonProps) {
       onClick={handleDownload}
       disabled={generating}
       className="fixed bottom-6 right-6 z-50 inline-flex cursor-pointer items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all hover:brightness-110 hover:shadow-xl active:scale-95 disabled:cursor-wait disabled:opacity-70 print:hidden"
-      aria-label="Download resume as PDF"
+      aria-label="Print or save resume as PDF"
     >
       {generating ? (
         <Loader2 size={16} className="shrink-0 animate-spin" />
@@ -47,7 +47,7 @@ export function DownloadButton({ name }: DownloadButtonProps) {
         <Download size={16} className="shrink-0" />
       )}
       <span className="hidden sm:inline">
-        {generating ? "Generating\u2026" : "Download PDF"}
+        {generating ? "Preparing\u2026" : "Print / Save PDF"}
       </span>
     </button>
   );
