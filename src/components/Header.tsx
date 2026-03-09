@@ -82,13 +82,15 @@ export function Header({ name, title, contact }: HeaderProps) {
   }
 
   return (
-    <header className="mb-6 sm:mb-8 text-center">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-primary">
+    <header className="mb-6 sm:mb-8 print:mb-4 text-center">
+      <h1 className="text-2xl sm:text-3xl md:text-4xl print:text-3xl font-bold tracking-tight text-primary">
         {name}
       </h1>
-      <p className="mt-1 text-sm sm:text-base font-medium text-muted">{title}</p>
+      <p className="mt-1 print:mt-0.5 text-sm sm:text-base print:text-sm font-medium text-muted">
+        {title}
+      </p>
 
-      <div className="mt-3 flex flex-wrap justify-center gap-y-1 text-xs sm:text-sm text-muted">
+      <div className="mt-3 print:mt-2 flex flex-wrap justify-center gap-y-1 text-xs sm:text-sm print:text-xs text-muted">
         {items.map((item, idx) => (
           <span key={idx} className="inline-flex items-center">
             {idx > 0 && (

@@ -44,14 +44,24 @@
 
   /* Print: no shadow, no margin, no background */
   @media print {
+    @page {
+      size: A4 portrait;
+      margin: 6mm;
+    }
+
+    html.pdf-export {
+      font-size: 12px;
+    }
+
     body {
       @apply bg-white;
-      font-size: 11px;
     }
+
     .page {
-      max-width: none;
+      width: 100%;
+      max-width: 198mm;
       min-height: auto;
-      margin: 0;
+      margin: 0 auto;
       box-shadow: none;
       border-radius: 0;
     }

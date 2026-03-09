@@ -20,7 +20,7 @@ import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
  *  - A two-column grid on desktop (main content left, sidebar right).
  *  - Stacked single column on mobile / print.
  *
- * Append `?download` to the URL to auto-generate and download the PDF
+ * Append `?download` to the URL to auto-open print flow
  * (e.g. `https://yoursite.com/?download`).
  */
 export default function App() {
@@ -36,7 +36,7 @@ export default function App() {
 
     hasAutoDownloaded.current = true;
 
-    // Short delay so fonts and images finish loading before capture.
+    // Short delay so fonts and layout fully settle before print.
     const timer = setTimeout(async () => {
       const page = document.querySelector(".page") as HTMLElement | null;
       if (!page) return;
@@ -50,10 +50,10 @@ export default function App() {
     <>
       <DownloadButton name={name} />
       <div className="page">
-        <div className="px-5 py-8 sm:px-10 sm:py-10 md:px-14 md:py-12">
+        <div className="px-5 py-8 sm:px-10 sm:py-10 md:px-14 md:py-12 print:px-4 print:py-5">
           <Header name={name} title={title} contact={contact} />
 
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_250px] gap-x-10 gap-y-2">
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_250px] print:grid-cols-[1fr_250px] gap-x-10 print:gap-x-8 gap-y-2 print:gap-y-0">
             {/* ---- Main column ---- */}
             <div>
               <ProfessionalSummary summary={summary} />
