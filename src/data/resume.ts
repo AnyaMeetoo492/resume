@@ -38,10 +38,13 @@ export const resumeData: ResumeData = {
       period: "2024 - Present",
       bullets: [
         {
-          text: "Developed tools for blockchain data analysis on EVM chains.",
+          text: "Developed Agentic AI tools for automated documentation PRs, [agentic orchestration](https://kymatics.vercel.app/), agentic contribution analysis, real-estate analysis & UAE defense data analysis.",
         },
         {
-          text: "Developed AI Agents for Market Analysis and Arbitrage Research.",
+          text: "Developed production backend services for [LoopFi](https://loopfi.xyz/)'s blockchain data analysis on EVM chains.",
+        },
+        {
+          text: "Developed AI Agents for stock, crypto, prediction market analysis and arbitrage research.",
         },
       ],
     },
