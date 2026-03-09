@@ -49,7 +49,7 @@
       margin: 6mm;
     }
 
-    html {
+    html.pdf-export {
       font-size: 14px;
     }
 

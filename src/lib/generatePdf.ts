@@ -15,17 +15,28 @@ export async function generateResumePdf(
 ): Promise<void> {
   await document.fonts.ready;
 
+  const root = document.documentElement;
   const previousTitle = document.title;
   document.title = filename.replace(/\.pdf$/i, "");
+  root.classList.add("pdf-export");
+
+  let cleanedUp = false;
+  const cleanup = () => {
+    if (cleanedUp) return;
+    cleanedUp = true;
+    document.title = previousTitle;
+    root.classList.remove("pdf-export");
+  };
+
+  // Restore title and temporary export class once print flow ends.
+  window.addEventListener("afterprint", cleanup, { once: true });
 
   // Wait one frame so title/style updates are applied before print dialog opens.
   await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
   window.print();
 
-  // Restore page title after print dialog is triggered.
-  setTimeout(() => {
-    document.title = previousTitle;
-  }, 0);
+  // Fallback for environments where `afterprint` is unreliable.
+  setTimeout(cleanup, 3000);
 }
 
 /**
