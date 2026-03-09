@@ -11,7 +11,7 @@ interface WorkExperienceProps {
 /** Renders a single job entry. */
 function ExperienceEntry({ entry }: { entry: Experience }) {
   return (
-    <div className="mb-5 last:mb-0">
+    <div className="mb-5 print:mb-3 last:mb-0">
       <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5">
         <h3 className="text-sm font-semibold text-primary">{entry.role}</h3>
         <span className="text-xs text-muted whitespace-nowrap">{entry.period}</span>
@@ -38,7 +38,7 @@ function ExperienceEntry({ entry }: { entry: Experience }) {
         <p className="text-xs italic text-accent/80 mt-1">{entry.promotions}</p>
       )}
 
-      <ul className="mt-2 space-y-1">
+      <ul className="mt-2 print:mt-1.5 space-y-1 print:space-y-0.5">
         {entry.bullets.map((bullet, idx) => (
           <li
             key={idx}

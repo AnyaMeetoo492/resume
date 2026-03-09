@@ -50,7 +50,7 @@ export default function App() {
     <>
       <DownloadButton name={name} />
       <div className="page">
-        <div className="px-5 py-8 sm:px-10 sm:py-10 md:px-14 md:py-12">
+        <div className="px-5 py-8 sm:px-10 sm:py-10 md:px-14 md:py-12 print:px-4 print:py-5">
           <Header name={name} title={title} contact={contact} />
 
           <div className="grid grid-cols-1 md:grid-cols-[1fr_250px] gap-x-10 gap-y-2">
