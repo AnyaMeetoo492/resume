@@ -146,14 +146,22 @@ export const resumeData: ResumeData = {
 
   volunteering: [
     {
-      organization: "INSA Toulouse",
-      role: "Associative Activities",
-      period: "2022 - 2026",
-      bullets: [
-        { text: "Singer leader and member — Les Enfoiros de l’INSA." },
-        { text: "Member — BEE Club (International Students Association)." },
-        { text: "Singer — Psychedelic Trauma music group." },
-      ],
+      title: "Les Enfoirés de l’INSA — Singer Leader and Member",
+      venue: "Charity Concerts Organization",
+      date: "2024 - 2025",
+      url: "https://enfoiros.org/",
+    },
+    {
+      title: "BEE Club — Member",
+      venue: "International Students Association",
+      date: "2022 - 2024",
+      url: "https://www.instagram.com/bee_insatoulouse/",
+    },
+    {
+      title: "Psychedelic Trauma — Singer",
+      venue: "Music Group",
+      date: "2023 - 2026",
+      url: "",
     },
   ],
 };
