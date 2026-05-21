@@ -160,7 +160,7 @@ export const resumeData: ResumeData = {
 
   volunteering: [
     {
-      title: "Les Enfoirés de l’INSA — Singer Leader and Member",
+      title: "Les Enfoiros de l’INSA — Singer Leader and Member",
       description: "Charity Concerts Organization",
       date: "2024 - 2025",
       url: "https://enfoiros.org/",
@@ -202,7 +202,7 @@ export const resumeData: ResumeData = {
       description:
         "Designed an end-to-end IoT system from sensor fabrication to wireless data monitoring.",
       date: "2025 - 2026",
-      url: "https://github.com/MOSH-Insa-Toulouse",
+      url: "https://github.com/MOSH-Insa-Toulouse/2025-2026-5ISS-MEETOO-MIRANVILLE-REVELLI",
     },
     {
       title: "Embedded AI Fall Detection",
