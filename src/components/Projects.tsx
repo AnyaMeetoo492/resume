@@ -13,6 +13,10 @@ function ProjectEntry({ project }: { project: Project }) {
       {/* Top line: title + date */}
       <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5">
         <h3 className="text-sm font-semibold text-primary inline-flex items-center gap-1.5">
+          {project.url && (
+            <Favicon url={project.url} size={13} />
+          )}
+
           {project.url ? (
             <a
               href={project.url}
@@ -33,9 +37,11 @@ function ProjectEntry({ project }: { project: Project }) {
       </div>
 
       {/* Tech stack */}
-      <p className="text-xs text-muted mt-0.5">{project.tech}</p>
+      <p className="text-xs text-muted mt-0.5">
+        {project.tech}
+      </p>
 
-      {/* Description as bullet (same style as experience) */}
+      {/* Description */}
       <ul className="mt-2 print:mt-1.5 space-y-1">
         <li className="text-sm leading-relaxed text-primary/85 pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-accent">
           {project.description}
