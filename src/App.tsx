@@ -24,7 +24,7 @@ import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
  * (e.g. `https://yoursite.com/?download`).
  */
 export default function App() {
-  const { name, title, summary, contact, experience, education, publications, skills, volunteering } =
+  const { name, title, summary, contact, experience, education, skills, volunteering } =
     resumeData;
 
   const hasAutoDownloaded = useRef(false);
