@@ -11,7 +11,7 @@ interface EducationSectionProps {
 /** Renders academic history entries. */
 export function EducationSection({ education }: EducationSectionProps) {
   return (
-    <Section title="Academic History">
+    <Section title="Education">
       <div className="space-y-3">
         {education.map((entry, idx) => (
           <div key={idx}>
