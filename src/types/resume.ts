@@ -65,6 +65,7 @@ export interface Language {
 export interface Project {
   title: string;
   tech: string;   // short tech stack
+  description: string;
   date: string;
   url?: string;
 }
