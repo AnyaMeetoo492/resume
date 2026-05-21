@@ -65,4 +65,5 @@ export interface ResumeData {
   education: Education[];
   publications: Publication[];
   skills: SkillGroup[];
+  volunteering: Volunteering[];
 }
