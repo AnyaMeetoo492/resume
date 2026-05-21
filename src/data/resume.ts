@@ -3,128 +3,81 @@
 import type { ResumeData } from "../types/resume";
 
 export const resumeData: ResumeData = {
-  name: "Erwin Lejeune",
-  title: "Lead Software Engineer | Robotics, AI, Blockchain",
+  name: "Anya Meetoo",
+  title: "Computer Engineering Student | IoT, Robotics, Embedded AI",
   summary:
-    "Software Engineer driving robotics autonomy, agentic AI, and blockchain-based platforms across domains. Experienced in C++, Python, Go. Active contributor to open-source projects and communities.",
+    "Computer Engineering student at INSA Toulouse specializing in embedded systems and IoT. Passionate about low-level programming, hardware/software integration, and real-time systems. Experience with C, C++, and Python through academic and industry projects in robotics, embedded AI, and connected devices. Currently seeking an embedded software engineering opportunity.",
   contact: {
-    email: "erwin.lejeune15@gmail.com",
-    portfolio: "https://elejeune.me",
-    location: "Abu Dhabi, open to relocate",
+    email: "anyameetoo@gmail.com",
+    portfolio: "https://github.com/AnyaMeetoo492",
+    location: "Toulouse, France (open to work in France)",
   },
+
 
   experience: [
     {
-      company: "Technology Innovation Institute",
-      companyUrl: "https://www.tii.ae/",
-      location: "Abu Dhabi",
-      role: "Lead Robotics Engineer",
-      period: "2022 - Present",
-      promotions:
-        "Engineer to Senior Engineer (2023), Senior Engineer to Lead Engineer (2026)",
+      company: "SCLE SFE",
+      companyUrl: "https://www.scle.fr/",
+      location: "Toulouse, France",
+      role: "Software Engineering Intern (R&D)",
+      period: "Mar 2026 - Present",
       bullets: [
         {
-          text: "Leading a Robotics Software team of 9 engineers developing decentralized autonomy frameworks for heterogeneous drone swarms. Subjects span across Autonomy (Navigation, Perception, Orchestration), Infrastructure (DevOps, RobotOps), and Integration of software and firmware into real-world platforms.",
+          text: "Developing a system image editing module in C++/Qt for industrial control software used in high-voltage electrical substations.",
         },
         {
-          text: "Led initiatives on modular software architecture, lifecycle management, and behavior orchestration for swarm autonomy.",
+          text: "Improving customization of monitoring interfaces by integrating SVG-based graphical elements (labels, lines, polygons).",
+        },
+        {
+          text: "Working across the full software lifecycle: specification, development, testing, and validation.",
         },
       ],
     },
     {
-      company: "Unchained Labs",
-      companyUrl: "https://unchainlabs.xyz/",
-      role: "Principal Solutions Engineer",
-      period: "2024 - Present",
+      company: "Qt Company",
+      companyUrl: "https://www.qt.io/",
+      location: "Hamburg, Germany",
+      role: "Software Engineering Intern (Quality Assurance)",
+      period: "Jun 2025 - Sep 2025",
       bullets: [
         {
-          text: "Developed Agentic AI tools for automated documentation PRs, [agentic orchestration](https://kymatics.vercel.app/), agentic contribution analysis, real-estate analysis & UAE defense data analysis.",
+          text: "Built a dataset of UI crashes from open-source Qt applications using Python and REST APIs.",
         },
         {
-          text: "Developed production backend services for [LoopFi](https://loopfi.xyz/)'s blockchain data analysis on EVM chains.",
+          text: "Reproduced and analyzed UI issues in virtual environments to support automated testing tools.",
         },
         {
-          text: "Developed AI Agents for stock, crypto, prediction market analysis and arbitrage research.",
+          text: "Contributed to autonomous testing tools with Python and C++, including code refactoring and reviews.",
         },
       ],
     },
     {
-      company: "Coalescent Mobile Robotics",
-      companyUrl: "https://cm-robotics.com/",
-      role: "Founding Robotics Engineer",
-      period: "2021 - 2022",
+      company: "Mauritius Telecom",
+      companyUrl: "https://www.mauritiustelecom.com/",
+      location: "Port Louis, Mauritius",
+      role: "Engineering Intern",
+      period: "Jul 2024 - Aug 2024",
       bullets: [
         {
-          text: "Founding core technical team that delivered the first working in-store robot system, supporting company milestones across pre-seed and seed rounds.",
+          text: "Studied mobile and fixed network architectures (4G/5G, FTTH, IP core networks).",
         },
         {
-          text: "Led development of navigation stack: path planning, motion control, and localization.",
-        },
-        {
-          text: "Contributed to perception (detection, filtering, tracking) and sensor fusion (EKF with odometry + IMU).",
+          text: "Developed a Power BI dashboard to analyze telecom tower data using SQL databases.",
         },
       ],
     },
     {
-      company: "Hiventive",
-      companyUrl: "https://www.hiventive.com/en/",
-      role: "Software Engineer",
-      location: "Remote",
-      period: "Jun 2020 - Feb 2021",
+      company: "SD Worx",
+      companyUrl: "https://www.sdworx.com/",
+      location: "Mauritius",
+      role: "Software Intern",
+      period: "Jul 2022",
       bullets: [
         {
-          text: "Built core backend services in Golang with PostgreSQL and Docker for a web-based computer-aided production engineering platform.",
+          text: "Introduced to full-stack web development (HTML, CSS, C#, SQL).",
         },
         {
-          text: "Developed automated programming test manager for candidate evaluation.",
-        },
-      ],
-    },
-    {
-      company: "Ecole Centrale de Nantes",
-      companyUrl: "https://www.ec-nantes.fr/",
-      role: "Robotics Researcher",
-      location: "Nantes, France",
-      period: "Mar 2020 - Feb 2021",
-      bullets: [
-        {
-          text: "Led 4 projects on multi-agent pathfinding, AI planning (PDDL), real-time ROS control (Xenomai/XDDP), and ROS2 latency benchmarking.",
-        },
-      ],
-    },
-    {
-      company: "Ingeniarius",
-      companyUrl: "https://ingeniarius.pt/",
-      role: "Robotics Assistant",
-      location: "Coimbra, Portugal",
-      period: "Jul 2019 - Sep 2019",
-      bullets: [
-        {
-          text: "Built full autonomy stacks from scratch using ROS and embedded systems. Won mapped and unmapped maze-solving competitions.",
-        },
-      ],
-    },
-    {
-      company: "Hiventive",
-      companyUrl: "https://www.hiventive.com/en/",
-      role: "Embedded Software Engineer",
-      location: "Bordeaux, France",
-      period: "Sep 2018 - Jul 2019",
-      bullets: [
-        {
-          text: "Developed SystemC/TLM virtual prototype of STM32 microcontroller for SoC emulation, emulating peripherals (TIM, I2C, CAN, GPIO, USART) with QEMU integration.",
-        },
-      ],
-    },
-    {
-      company: "Polytech Nantes (LS2N)",
-      companyUrl: "https://www.ls2n.fr/",
-      role: "Robotics Intern",
-      location: "Nantes, France",
-      period: "May 2018 - Jul 2018",
-      bullets: [
-        {
-          text: "Built TurtleBot3 platform and developed WiFi mesh RSSI-based triangulation algorithm for indoor localization.",
+          text: "Developed basic applications and gained experience with databases and backend logic.",
         },
       ],
     },
@@ -132,22 +85,22 @@ export const resumeData: ResumeData = {
 
   education: [
     {
-      degree: "M.Sc. - Control & Robotics",
-      institution: "Ecole Centrale de Nantes",
-      institutionUrl: "https://www.ec-nantes.fr/",
-      period: "2019 - 2021",
+      degree: "Engineering Degree – Computer Science (IR - Innovative Smart Systems)",
+      institution: "INSA Toulouse",
+      institutionUrl: "https://www.insa-toulouse.fr/",
+      period: "2022 - 2026",
     },
     {
-      degree: "M.Sc. - Computer Engineering & Aeronautics",
-      institution: "Ynov Bordeaux",
-      institutionUrl: "https://www.ynov.com/campus/bordeaux",
-      period: "2018 - 2019",
+      degree: "Bachelor 1 – Computer Science",
+      institution: "Université Paul Sabatier Toulouse III",
+      institutionUrl: "https://www.univ-tlse3.fr/",
+      period: "2021 - 2022",
     },
     {
-      degree: "B.Sc. - Electronics Engineering",
-      institution: "Nantes Université",
-      institutionUrl: "https://www.univ-nantes.fr/",
-      period: "2014 - 2018",
+      degree: "Higher School Certificate – Mathematics & Computer Science",
+      institution: "Loreto College Quatre Bornes",
+      institutionUrl: "",
+      period: "2014 - 2021",
     },
   ],
 
@@ -174,20 +127,20 @@ export const resumeData: ResumeData = {
 
   skills: [
     {
-      category: "Software Engineering",
-      items: ["C++", "Python", "Go", "React", "Rust", "C", "ROS2"],
+      category: "Programming",
+      items: ["C", "C++", "Python", "Java", "Assembly"],
     },
     {
-      category: "Robotics",
-      items: ["Path Planning", "Motion Control", "Sensor Fusion"],
+      category: "Embedded Systems",
+      items: ["STM32", "GPIO", "Timers", "Interrupts", "UART", "ADC", "PWM", "Hardware/Software Integration"],
     },
     {
-      category: "AI",
-      items: ["Agentic Stacks", "RAG", "MCP", "LLM APIs"],
+      category: "Tools & Software",
+      items: ["MATLAB", "Qt", "Vivado", "Eclipse", "IntelliJ IDEA", "Visual Studio Code"],
     },
     {
-      category: "Software Management",
-      items: ["Scrum", "Jira", "Github", "Gitlab"],
+      category: "Development & Platforms",
+      items: ["GitHub", "GitLab", "Jira", "Confluence", "Linux"],
     },
   ],
 };
