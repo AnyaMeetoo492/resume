@@ -10,6 +10,7 @@ import {
   EducationSection,
   Volunteering,
   Skills,
+  Languages,
 } from "./components";
 import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
 
@@ -24,7 +25,7 @@ import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
  * (e.g. `https://yoursite.com/?download`).
  */
 export default function App() {
-  const { name, title, summary, contact, experience, education, skills, volunteering } =
+  const { name, title, summary, contact, experience, education, skills, volunteering, languages } =
     resumeData;
 
   const hasAutoDownloaded = useRef(false);
@@ -63,6 +64,7 @@ export default function App() {
             {/* ---- Sidebar ---- */}
             <aside>
               <EducationSection education={education} />
+              <Languages languages={languages} />
               <Skills skills={skills} />
               <Volunteering volunteering={volunteering} />
             </aside>
