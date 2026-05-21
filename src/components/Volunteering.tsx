@@ -9,9 +9,9 @@ interface VolunteeringProps {
 }
 
 /** Renders a condensed list of academic volunteerings. */
-export function Volunteering({ volunteering }: VolunteeringProps)
+export function Volunteering({ volunteering }: VolunteeringProps) {
   return (
-    <Section title="Volunteerings">
+    <Section title="Volunteering">
       <ul className="space-y-2.5">
         {volunteering.map((pub, idx) => (
           <li key={idx}>
