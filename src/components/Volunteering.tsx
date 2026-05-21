@@ -4,16 +4,16 @@ import type { Volunteering } from "../types/resume";
 import { Favicon } from "./Favicon";
 import { Section } from "./Section";
 
-interface VolunteeringsProps {
-  volunteerings: Volunteering[];
+interface VolunteeringProps {
+  volunteering: Volunteering[];
 }
 
 /** Renders a condensed list of academic volunteerings. */
-export function Volunteerings({ volunteerings }: VolunteeringsProps) {
+export function Volunteering({ volunteering }: VolunteeringProps)
   return (
     <Section title="Volunteerings">
       <ul className="space-y-2.5">
-        {volunteerings.map((pub, idx) => (
+        {volunteering.map((pub, idx) => (
           <li key={idx}>
             <p className="text-sm font-semibold text-primary leading-snug inline-flex items-start gap-1.5">
               {pub.url && <Favicon url={pub.url} size={13} className="mt-0.5" />}
