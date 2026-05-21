@@ -147,19 +147,19 @@ export const resumeData: ResumeData = {
   volunteering: [
     {
       title: "Les Enfoirés de l’INSA — Singer Leader and Member",
-      venue: "Charity Concerts Organization",
+      description: "Charity Concerts Organization",
       date: "2024 - 2025",
       url: "https://enfoiros.org/",
     },
     {
       title: "BEE Club — Member",
-      venue: "International Students Association",
+      description: "International Students Association",
       date: "2022 - 2024",
       url: "https://www.instagram.com/bee_insatoulouse/",
     },
     {
       title: "Psychedelic Trauma — Singer",
-      venue: "Music Group",
+      description: "Music Group",
       date: "2023 - 2026",
       url: "",
     },
