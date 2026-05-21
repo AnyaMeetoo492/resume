@@ -4,7 +4,7 @@ import type { ResumeData } from "../types/resume";
 
 export const resumeData: ResumeData = {
   name: "Anya Meetoo",
-  title: "Computer Engineering Student | IoT, Robotics, Embedded AI",
+  title: "Computer Engineering Student | IoT, Robotics, Embedded Systems, AI | Graduating September 2026",
   summary:
     "Computer Engineering student at INSA Toulouse specializing in embedded systems and IoT. Passionate about low-level programming, hardware/software integration, and real-time systems. Experience with C, C++, and Python through academic and industry projects in robotics, embedded AI, and connected devices. Currently seeking an embedded software engineering opportunity.",
   contact: {
