@@ -8,7 +8,6 @@ import {
   ProfessionalSummary,
   WorkExperience,
   EducationSection,
-  Publications,
   Volunteering,
   Skills,
 } from "./components";
@@ -65,7 +64,6 @@ export default function App() {
             {/* ---- Sidebar ---- */}
             <aside>
               <Skills skills={skills} />
-              <Publications publications={publications} />
               <Volunteering volunteering={volunteering} />
             </aside>
           </div>
