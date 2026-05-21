@@ -72,5 +72,5 @@ export interface ResumeData {
   publications: Publication[];
   skills: SkillGroup[];
   volunteering: Volunteering[];
-  language: Language[];
+  languages: Language[];
 }
