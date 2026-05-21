@@ -13,6 +13,20 @@ export const resumeData: ResumeData = {
     location: "Toulouse, France (open to work in France)",
   },
 
+  languages: [
+    {
+      name: "English",
+      level: "C1 (TOEIC 985/990)",
+    },
+    {
+      name: "French",
+      level: "C1 (DALF)",
+    },
+    {
+      name: "Mauritian Creole",
+      level: "C2 / Native",
+    },
+  ],
 
   experience: [
     {
@@ -37,7 +51,7 @@ export const resumeData: ResumeData = {
       company: "Qt Company",
       companyUrl: "https://www.qt.io/",
       location: "Hamburg, Germany",
-      role: "Software Engineering Intern (Quality Assurance)",
+      role: "Software Engineering Intern (R&D Quality Assurance)",
       period: "Jun 2025 - Sep 2025",
       bullets: [
         {
