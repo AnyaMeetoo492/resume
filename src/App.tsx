@@ -7,8 +7,8 @@ import {
   Header,
   ProfessionalSummary,
   WorkExperience,
-  Publications,
   EducationSection,
+  Publications,
   Skills,
 } from "./components";
 import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
@@ -58,12 +58,12 @@ export default function App() {
             <div>
               <ProfessionalSummary summary={summary} />
               <WorkExperience experience={experience} />
+              <EducationSection education={education} />
             </div>
 
             {/* ---- Sidebar ---- */}
             <aside>
               <Skills skills={skills} />
-              <EducationSection education={education} />
               <Publications publications={publications} />
             </aside>
           </div>
