@@ -8,5 +8,5 @@ export { WorkExperience } from "./WorkExperience";
 export { Publications } from "./Publications";
 export { EducationSection } from "./EducationSection";
 export { Skills } from "./Skills";
-export { Volunteering } from "./Volunteering";
+export { Volunteering } from "./Volunteerings";
 export { Section } from "./Section";
