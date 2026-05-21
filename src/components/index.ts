@@ -10,3 +10,4 @@ export { EducationSection } from "./EducationSection";
 export { Skills } from "./Skills";
 export { Volunteering } from "./Volunteering";
 export { Section } from "./Section";
+export { Languages } from "./Languages";
