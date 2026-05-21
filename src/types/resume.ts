@@ -55,6 +55,12 @@ export interface SkillGroup {
   items: string[];
 }
 
+/** A spoken language and proficiency level. */
+export interface Language {
+  name: string;
+  level: string;
+}
+
 /** Root data structure for the entire resume. */
 export interface ResumeData {
   name: string;
@@ -66,4 +72,5 @@ export interface ResumeData {
   publications: Publication[];
   skills: SkillGroup[];
   volunteering: Volunteering[];
+  language: Language[];
 }
