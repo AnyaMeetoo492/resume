@@ -41,6 +41,14 @@ export interface Publication {
   url?: string;
 }
 
+/** A volunteering activity or organization involvement. */
+export interface Volunteering {
+  title: string;      // Role + organization
+  organization: string; // (optional if you split)
+  date: string;
+  url?: string;
+}
+
 /** A group of related skills (e.g. "Software Engineering"). */
 export interface SkillGroup {
   category: string;
