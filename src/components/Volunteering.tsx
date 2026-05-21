@@ -33,7 +33,7 @@ export function Volunteerings({ volunteerings }: VolunteeringsProps) {
               </span>
             </p>
             <p className="text-xs text-muted mt-0.5">
-              {pub.venue}
+              {pub.description}
               <span className="mx-1.5 text-divider">&middot;</span>
               {pub.date}
             </p>
