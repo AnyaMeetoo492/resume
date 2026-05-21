@@ -53,7 +53,7 @@ export const resumeData: ResumeData = {
     },
     {
       company: "Mauritius Telecom",
-      companyUrl: "https://www.mauritiustelecom.com/",
+      companyUrl: "https://www.myt.mu/",
       location: "Port Louis, Mauritius",
       role: "Engineering Intern",
       period: "Jul 2024 - Aug 2024",
