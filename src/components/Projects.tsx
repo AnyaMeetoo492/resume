@@ -13,9 +13,13 @@ function ProjectEntry({ project }: { project: Project }) {
       {/* Top line: title + date */}
       <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5">
         <h3 className="text-sm font-semibold text-primary inline-flex items-center gap-1.5">
-          {project.url && <Favicon url={project.url} size={13} />}
           {project.url ? (
-            {project.url}
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-accent transition-colors"
+            >
               {project.title}
             </a>
           ) : (
