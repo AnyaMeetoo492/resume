@@ -178,4 +178,48 @@ export const resumeData: ResumeData = {
       url: "",
     },
   ],
+
+  projects: [
+    {
+      title: "Quadruped Robot Locomotion",
+      tech: "FPGA · AI · Robotics · Embedded Systems",
+      description:
+        "Developed perception and decision systems for an autonomous quadruped robot under embedded constraints.",
+      date: "2025 - 2026",
+      url: "",
+    },
+    {
+      title: "Embedded Sailboat Control (STM32)",
+      tech: "C · STM32 · GPIO · Timers · Interrupts · UART",
+      description:
+        "Implemented low-level drivers and real-time control on STM32 using direct register manipulation.",
+      date: "2024 - 2025",
+      url: "https://github.com/bongibault-romain/insa-voilier",
+    },
+    {
+      title: "IoT Smart Gas Sensor",
+      tech: "LoRa · Embedded Systems · KiCad · Node-RED",
+      description:
+        "Designed an end-to-end IoT system from sensor fabrication to wireless data monitoring.",
+      date: "2025 - 2026",
+      url: "https://github.com/MOSH-Insa-Toulouse",
+    },
+    {
+      title: "Embedded AI Fall Detection",
+      tech: "Python · TensorFlow · CNN · Edge AI",
+      description:
+        "Built and optimized a CNN model for real-time fall detection under embedded constraints.",
+      date: "2025 - 2026",
+      url: "",
+    },
+    {
+      title: "Laser Game Signal Processing",
+      tech: "MATLAB · FFT · Signal Processing",
+      description:
+        "Implemented FFT-based frequency detection to identify multiple signals under noise and aliasing.",
+      date: "2024",
+      url: "https://github.com/AnyaMeetoo492/BE_CHTI",
+    },
+  ]
+  
 };
