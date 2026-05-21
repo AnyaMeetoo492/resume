@@ -43,8 +43,8 @@ export interface Publication {
 
 /** A volunteering activity or organization involvement. */
 export interface Volunteering {
-  title: string;      // Role + organization
-  organization: string; // (optional if you split)
+  title: string; 
+  description: string; 
   date: string;
   url?: string;
 }
