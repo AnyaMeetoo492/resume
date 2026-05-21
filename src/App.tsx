@@ -58,11 +58,11 @@ export default function App() {
             <div>
               <ProfessionalSummary summary={summary} />
               <WorkExperience experience={experience} />
-              <EducationSection education={education} />
             </div>
 
             {/* ---- Sidebar ---- */}
             <aside>
+              <EducationSection education={education} />
               <Skills skills={skills} />
               <Volunteering volunteering={volunteering} />
             </aside>
