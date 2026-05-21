@@ -143,4 +143,17 @@ export const resumeData: ResumeData = {
       items: ["GitHub", "GitLab", "Jira", "Confluence", "Linux"],
     },
   ],
+
+  volunteering: [
+    {
+      organization: "INSA Toulouse",
+      role: "Associative Activities",
+      period: "2022 - 2026",
+      bullets: [
+        { text: "Singer leader and member — Les Enfoiros de l’INSA." },
+        { text: "Member — BEE Club (International Students Association)." },
+        { text: "Singer — Psychedelic Trauma music group." },
+      ],
+    },
+  ],
 };
