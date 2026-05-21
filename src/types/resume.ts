@@ -61,6 +61,14 @@ export interface Language {
   level: string;
 }
 
+/** A technical project or personal work. */
+export interface Project {
+  title: string;
+  tech: string;   // short tech stack
+  date: string;
+  url?: string;
+}
+
 /** Root data structure for the entire resume. */
 export interface ResumeData {
   name: string;
@@ -73,4 +81,5 @@ export interface ResumeData {
   skills: SkillGroup[];
   volunteering: Volunteering[];
   languages: Language[];
+  projects: Project[];
 }
