@@ -60,7 +60,7 @@ export default function App() {
             <div>
               <ProfessionalSummary summary={summary} />
               <WorkExperience experience={experience} />
-              <Projects languages={projects} />
+              <Projects projects={projects} />
             </div>
 
             {/* ---- Sidebar ---- */}
