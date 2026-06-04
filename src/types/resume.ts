@@ -70,6 +70,11 @@ export interface Project {
   url?: string;
 }
 
+/** A group of current interests */
+export interface CurrentInterest {
+  item: string;
+}
+
 /** Root data structure for the entire resume. */
 export interface ResumeData {
   name: string;
@@ -80,6 +85,7 @@ export interface ResumeData {
   education: Education[];
   publications: Publication[];
   skills: SkillGroup[];
+  interests : CurrentInterest[];
   volunteering: Volunteering[];
   languages: Language[];
   projects: Project[];
