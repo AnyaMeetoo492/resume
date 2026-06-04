@@ -80,6 +80,7 @@ export interface ResumeData {
   name: string;
   title: string;
   summary: string;
+  profileImage?: string;
   contact: ContactInfo;
   experience: Experience[];
   education: Education[];

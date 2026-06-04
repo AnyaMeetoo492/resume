@@ -5,13 +5,13 @@ import type { ResumeData } from "../types/resume";
 export const resumeData: ResumeData = {
   name: "Anya Meetoo",
   title: "Computer Engineering Student | IoT, Robotics, Embedded Systems, AI | Graduating September 2026",
+  profileImage: "/profile.jpg",
   summary:
     "Computer Engineering student at INSA Toulouse specializing in embedded systems and IoT. Passionate about low-level programming, hardware/software integration and real-time systems. Experience with C, C++, Python, RUST and Assembly through academic and personal projects in robotics, embedded AI and connected devices. I am currently seeking an embedded software engineering opportunity in France as from September/October 2026.",
   contact: {
     email: "anyameetoo@gmail.com",
     portfolio: "https://github.com/AnyaMeetoo492",
     location: "Toulouse, France (open to work in France)",
-    profileImage: "src/data/profile.png", 
   },
 
   languages: [
