@@ -10,7 +10,7 @@ interface SkillsProps {
 /** Renders technology / skills grouped by category. */
 export function Skills({ skills }: SkillsProps) {
   return (
-    <Section title="Technology">
+    <Section title="Technologies">
       <div className="space-y-3">
         {skills.map((group, idx) => (
           <div key={idx}>
