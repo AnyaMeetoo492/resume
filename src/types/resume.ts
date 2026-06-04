@@ -72,7 +72,7 @@ export interface Project {
 
 /** A group of current interests */
 export interface CurrentInterest {
-  item: string;
+  label: string;
 }
 
 /** Root data structure for the entire resume. */
