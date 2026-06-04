@@ -13,6 +13,7 @@ import {
   Interests,
   Languages,
   Projects,
+  ProfilePicture,
 } from "./components";
 import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
 
@@ -66,6 +67,7 @@ export default function App() {
 
             {/* ---- Sidebar ---- */}
             <aside>
+              {resumeData.profileImage && (<ProfilePicture imageUrl={resumeData.profileImage} alt={name} />)}
               <EducationSection education={education} />
               <Languages languages={languages} />
               <Skills skills={skills} />
