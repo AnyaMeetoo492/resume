@@ -11,7 +11,7 @@ export const resumeData: ResumeData = {
     email: "anyameetoo@gmail.com",
     portfolio: "https://github.com/AnyaMeetoo492",
     location: "Toulouse, France (open to work in France)",
-    profileImage: "src/data/resume.ts/profile.png", 
+    profileImage: "src/data/profile.png", 
   },
 
   languages: [
