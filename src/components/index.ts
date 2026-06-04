@@ -13,3 +13,4 @@ export { Volunteering } from "./Volunteering";
 export { Section } from "./Section";
 export { Languages } from "./Languages";
 export { Projects } from "./Projects";
+export { ProfilePicture } from "./ProfilePicture";
