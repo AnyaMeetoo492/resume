@@ -6,29 +6,30 @@ import qrCode from "./qr_code.jpg";
 
 export const resumeData: ResumeData = {
   name: "Anya Meetoo",
-  title: "Computer Engineering Student | IoT, Robotics, Embedded Systems, AI | Graduating September 2026",
+  title: "Étudiante en ingénierie informatique | IoT, robotique, systèmes embarqués, IA | Diplôme en septembre 2026",
   profileImage: profilePic,
   qrCodeImage: qrCode,
   summary:
-    "Computer Engineering student at INSA Toulouse specializing in embedded systems and IoT. Passionate about low-level programming, hardware/software integration and real-time systems. Experience with C, C++, Python, RUST and Assembly through academic and personal projects in robotics, embedded AI and connected devices. I am currently seeking an embedded software engineering opportunity in France as from September/October 2026.",
+    "Étudiante en ingénierie informatique à l’INSA Toulouse, spécialisée en systèmes embarqués et IoT. Passionnée par la programmation bas niveau, l’intégration matériel/logiciel et les systèmes temps réel. Expérience en C, C++, Python, RUST et Assembleur à travers des projets académiques et personnels en robotique, IA embarquée et objets connectés. Je recherche actuellement une opportunité en ingénierie logiciel embarqué en France à partir de septembre/octobre 2026.",
+  
   contact: {
     email: "anyameetoo@gmail.com",
     portfolio: "https://github.com/AnyaMeetoo492",
-    location: "Toulouse, France (open to work in France)",
+    location: "Toulouse, France (ouverte à travailler en France)",
   },
 
   languages: [
     {
-      name: "English",
+      name: "Anglais",
       level: "C1 (TOEIC 985/990)",
     },
     {
-      name: "French",
+      name: "Français",
       level: "C1 (DALF)",
     },
     {
-      name: "Mauritian Creole",
-      level: "C2 / Native",
+      name: "Créole mauricien",
+      level: "C2 / Langue maternelle",
     },
   ],
 
@@ -37,65 +38,65 @@ export const resumeData: ResumeData = {
       company: "SCLE SFE",
       companyUrl: "https://www.scle.fr/",
       location: "Toulouse, France",
-      role: "Software Engineering Intern (R&D)",
-      period: "Mar 2026 - Present",
+      role: "Stagiaire ingénieure logiciel (R&D)",
+      period: "Mar 2026 - Présent",
       bullets: [
         {
-          text: "Developing a system image editing module in C++/Qt for industrial control software ARKENS Studio used by SCLE SFE Clients in high-voltage electrical substations for monitoring.",
-        },
-        { 
-          text: "Enhanced monitoring (equipment on site) interface customization by integrating dynamic SVG-based graphical elements (labels, lines, polygons) that update as parameters change."        
+          text: "Développement d’un module d’édition d’images système en C++/Qt pour le logiciel industriel ARKENS Studio utilisé par les clients de SCLE SFE dans des postes électriques haute tension.",
         },
         {
-          text: "Working with R&D Systems Configuration Team across the full software lifecycle: specification, development, testing, and validation.",
+          text: "Amélioration de la personnalisation de l’interface de supervision en intégrant des éléments graphiques dynamiques basés sur SVG (étiquettes, lignes, polygones) mis à jour en fonction des paramètres.",
+        },
+        {
+          text: "Travail avec l’équipe Configuration Systèmes R&D sur l’ensemble du cycle de vie logiciel : spécification, développement, tests et validation.",
         },
       ],
     },
     {
       company: "Qt Company",
       companyUrl: "https://www.qt.io/",
-      location: "Hamburg, Germany",
-      role: "Software Engineering Intern (R&D Quality Assurance)",
-      period: "Jun 2025 - Sep 2025",
+      location: "Hamburg, Allemagne",
+      role: "Stagiaire ingénieure logiciel (Assurance qualité R&D)",
+      period: "Juin 2025 - Sept 2025",
       bullets: [
         {
-          text: "Built a dataset of UI crashes from open-source Qt applications using Python and REST APIs.",
+          text: "Création d’un dataset de crashs d’interfaces utilisateur à partir d’applications open source Qt en utilisant Python et des API REST.",
         },
         {
-          text: "Reproduced and analyzed UI issues in virtual environments to support automated testing tools.",
+          text: "Reproduction et analyse de problèmes d’interface dans des environnements virtuels pour soutenir les outils de test automatisés.",
         },
         {
-          text: "Contributed to the Autonomous testing project with Python and C++, including code refactoring and reviews.",
+          text: "Contribution au projet de tests autonomes avec Python et C++, incluant refactorisation et revues de code.",
         },
       ],
     },
     {
       company: "Mauritius Telecom",
       companyUrl: "https://www.telecom.mu/",
-      location: "Port Louis, Mauritius",
-      role: "Engineering Intern",
-      period: "Jul 2024 - Aug 2024",
+      location: "Port Louis, Maurice",
+      role: "Stagiaire ingénieure",
+      period: "Juil 2024 - Août 2024",
       bullets: [
         {
-          text: "Studied mobile and fixed network architectures (4G/5G, FTTH, IP core networks).",
+          text: "Étude des architectures réseaux mobiles et fixes (4G/5G, FTTH, réseaux cœur IP).",
         },
         {
-          text: "Developed a Power BI dashboard to analyze telecom tower data using SQL databases.",
+          text: "Développement d’un tableau de bord Power BI pour analyser des données de tours télécoms via des bases SQL.",
         },
       ],
     },
     {
       company: "SD Worx",
       companyUrl: "https://www.sdworx.com/",
-      location: "Mauritius",
-      role: "Software Intern",
-      period: "Jul 2022",
+      location: "Maurice",
+      role: "Stagiaire logiciel",
+      period: "Juil 2022",
       bullets: [
         {
-          text: "Introduced to full-stack web development (HTML, CSS, C#, SQL).",
+          text: "Initiation au développement web full-stack (HTML, CSS, C#, SQL).",
         },
         {
-          text: "Developed basic applications and gained experience with databases and backend logic.",
+          text: "Développement d’applications simples et acquisition d’expérience en bases de données et logique backend.",
         },
       ],
     },
@@ -103,19 +104,19 @@ export const resumeData: ResumeData = {
 
   education: [
     {
-      degree: "Engineering Degree – Computer Science (IR - Innovative Smart Systems)",
+      degree: "Diplôme d’ingénieur – Informatique (IR - Systèmes intelligents innovants)",
       institution: "INSA Toulouse",
       institutionUrl: "https://www.insa-toulouse.fr/",
       period: "2022 - 2026",
     },
     {
-      degree: "Bachelor 1 – Computer Science",
+      degree: "Licence 1 – Informatique",
       institution: "Université Paul Sabatier Toulouse III",
       institutionUrl: "https://www.univ-tlse3.fr/",
       period: "2021 - 2022",
     },
     {
-      degree: "Higher School Certificate – Mathematics & Computer Science",
+      degree: "Higher School Certificate – Mathématiques & Informatique",
       institution: "Loreto College Quatre Bornes",
       institutionUrl: "",
       period: "2014 - 2021",
@@ -124,81 +125,69 @@ export const resumeData: ResumeData = {
 
   publications: [
     {
-      title: "Decentralized Acceleration-Based Bird-Inspired Flocking",
+      title: "Flocage inspiré des oiseaux basé sur une accélération décentralisée",
       venue: "IEEE/RSJ IROS 2024",
-      date: "October 2024",
+      date: "Octobre 2024",
       url: "https://www.researchgate.net/publication/387418977_Decentralized_Acceleration-Based_Bird-Inspired_Flocking",
     },
     {
-      title: "Real-time Jitter Measurements under ROS2: the Inverted Pendulum Case",
+      title: "Mesures de jitter en temps réel sous ROS2 : cas du pendule inversé",
       venue: "Preprint, 2021",
-      date: "March 2021",
+      date: "Mars 2021",
       url: "https://www.researchgate.net/publication/350353690_Real-time_Jitter_Measurements_under_ROS2_the_Inverted_Pendulum_case",
     },
     {
-      title: "Survey of the Multi-Agent Pathfinding Solutions",
+      title: "Panorama des solutions de planification de chemin multi-agents",
       venue: "Preprint, 2021",
-      date: "January 2021",
+      date: "Janvier 2021",
       url: "https://www.researchgate.net/publication/348716625_Survey_of_the_Multi-Agent_Pathfinding_Solutions",
     },
   ],
 
   skills: [
     {
-      category: "Programming",
-      items: ["C", "C++", "Python", "Java", "Assembly"],
+      category: "Programmation",
+      items: ["C", "C++", "Python", "Java", "Assembleur"],
     },
     {
-      category: "Embedded Systems",
-      items: ["STM32", "GPIO", "Timers", "Interrupts", "UART", "ADC", "PWM", "Hardware/Software Integration"],
+      category: "Systèmes embarqués",
+      items: ["STM32", "GPIO", "Timers", "Interrupts", "UART", "ADC", "PWM", "Intégration matériel/logiciel"],
     },
     {
-      category: "Tools & Software",
+      category: "Outils & logiciels",
       items: ["MATLAB", "Qt", "Vivado", "Eclipse", "IntelliJ IDEA", "Visual Studio Code"],
     },
     {
-      category: "Development & Platforms",
+      category: "Développement & plateformes",
       items: ["GitHub", "GitLab", "Jira", "Confluence", "Linux"],
     },
   ],
 
-   interests: [
-    {
-      label: "Embedded Systems",
-    },
-    {
-      label: "IoT",
-    },
-    {
-      label: "Robotics",
-    },
-    {
-      label: "AI",
-    },
-    {
-      label: "3D Processing",
-    },
-     {
-      label: "Music Production",
-    },
+  interests: [
+    { label: "Systèmes embarqués" },
+    { label: "IoT" },
+    { label: "Robotique" },
+    { label: "IA" },
+    { label: "Traitement 3D" },
+    { label: "Production musicale" },
   ],
-  
+
   volunteering: [
     {
-      title: "Les Enfoiros de l'INSA — Singer Leader and Member",
-      description: "Charity Concerts Organization",
+      title: "Les Enfoiros de l'INSA — Chanteuse leader et membre",
+      description: "Organisation de concerts caritatifs",
       date: "2024 - 2025",
       url: "https://enfoiros.org/",
     },
     {
-      title: "BEE Club — Member",
-      description: "International Students Association",
+      title: "BEE Club — Membre",
+      description: "Association d’étudiants internationaux",
       date: "2022 - 2024",
       url: "https://www.instagram.com/bee_insatoulouse/",
     },
     {
-      title: "Psychedelic Trauma — Singer",
-      description: "Music Group",
+      title: "Psychedelic Trauma — Chanteuse",
+      description: "Groupe de musique",
       date: "2023 - 2026",
       url: "",
     },
@@ -206,45 +195,44 @@ export const resumeData: ResumeData = {
 
   projects: [
     {
-      title: "Quadruped Robot Locomotion",
-      tech: "FPGA · AI · Robotics · Embedded Systems",
+      title: "Locomotion d’un robot quadrupède",
+      tech: "FPGA · IA · Robotique · Systèmes embarqués",
       description:
-        "Developed perception and decision systems using a depth camera for an autonomous quadruped robot under embedded constraints such as energy consumption.",
+        "Développement de systèmes de perception et de décision utilisant une caméra de profondeur pour un robot quadrupède autonome sous contraintes embarquées (énergie, performance).",
       date: "2025 - 2026",
       url: "",
     },
     {
-      title: "Embedded Sailboat Control (STM32)",
-      tech: "C · STM32 · GPIO · Timers · Interrupts · UART",
+      title: "Contrôle d’un voilier embarqué (STM32)",
+      tech: "C · STM32 · GPIO · Timers · Interruptions · UART",
       description:
-        "Implemented low-level drivers and real-time control on STM32 using direct register manipulation to operate a sailboat under physical constraints.",
+        "Implémentation de drivers bas niveau et de contrôle temps réel sur STM32 en manipulant directement les registres.",
       date: "2024 - 2025",
       url: "https://github.com/bongibault-romain/insa-voilier",
     },
     {
-      title: "IoT Smart Gas Sensor",
-      tech: "LoRa · Embedded Systems · KiCad · Node-RED",
+      title: "Capteur de gaz IoT intelligent",
+      tech: "LoRa · Systèmes embarqués · KiCad · Node-RED",
       description:
-        "Designed an end-to-end IoT system from a gas sensor fabrication to wireless data monitoring.",
+        "Conception d’un système IoT complet, de la fabrication du capteur à la supervision des données sans fil.",
       date: "2025 - 2026",
       url: "https://github.com/MOSH-Insa-Toulouse/2025-2026-5ISS-MEETOO-MIRANVILLE-REVELLI",
     },
     {
-      title: "Embedded AI Fall Detection",
+      title: "Détection de chute par IA embarquée",
       tech: "Python · TensorFlow · CNN · Edge AI",
       description:
-        "Built and optimized a CNN model for real-time fall detection under embedded constraints using a dataset library.",
+        "Conception et optimisation d’un modèle CNN pour une détection de chute en temps réel sous contraintes embarquées.",
       date: "2025 - 2026",
       url: "",
     },
     {
-      title: "Laser Game Signal Processing",
-      tech: "MATLAB · FFT · Signal Processing",
+      title: "Traitement du signal – Laser Game",
+      tech: "MATLAB · FFT · Traitement du signal",
       description:
-        "Implemented FFT-based frequency detection to identify multiple signals under noise and aliasing.",
+        "Implémentation d’une détection fréquentielle basée sur FFT pour identifier plusieurs signaux en présence de bruit.",
       date: "2024",
       url: "https://github.com/AnyaMeetoo492/BE_CHTI",
     },
   ]
-  
 };
