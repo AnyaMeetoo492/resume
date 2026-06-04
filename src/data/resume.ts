@@ -158,6 +158,27 @@ export const resumeData: ResumeData = {
     },
   ],
 
+   interests: [
+    {
+      label: "Embedded Systems",
+    },
+    {
+      label: "IoT",
+    },
+    {
+      label: "Robotics",
+    },
+    {
+      label: "AI",
+    },
+    {
+      label: "3D Processing",
+    },
+     {
+      label: "Music Production",
+    },
+  ],
+  
   volunteering: [
     {
       title: "Les Enfoiros de l’INSA — Singer Leader and Member",
