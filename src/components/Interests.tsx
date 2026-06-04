@@ -10,7 +10,7 @@ interface InterestsProps {
 /** Renders current interests as chips. */
 export function Interests({ interests }: InterestsProps) {
   return (
-    <Section title="Current Interests">
+    <Section title="Centres d'intérêts">
       <div className="flex flex-wrap gap-1.5">
         {interests.map((interest) => (
           <span
