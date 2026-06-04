@@ -1,39 +1,35 @@
 // Erwin Lejeune - 2026-02-15
 
 import type { Education } from "../types/resume";
-import { Favicon } from "./Favicon";
 import { Section } from "./Section";
 
 interface EducationSectionProps {
   education: Education[];
 }
 
-/** Renders academic history entries. */
+/** Renders educational background. */
 export function EducationSection({ education }: EducationSectionProps) {
   return (
     <Section title="Education">
-      <div className="space-y-3">
-        {education.map((entry, idx) => (
-          <div key={idx}>
-            <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5">
-              <h3 className="text-sm font-semibold text-primary">{entry.degree}</h3>
-              <span className="text-xs text-muted whitespace-nowrap">{entry.period}</span>
-            </div>
-            <p className="text-xs text-muted mt-0.5 inline-flex items-center gap-1.5">
-              {entry.institutionUrl && <Favicon url={entry.institutionUrl} size={13} />}
-              {entry.institutionUrl ? (
+      <div className="space-y-2 print:space-y-1.5">
+        {education.map((edu) => (
+          <div key={edu.degree}>
+            {edu.institutionUrl ? (
+              <h3 className="text-xs font-semibold text-primary print:text-xs">
                 <a
-                  href={entry.institutionUrl}
+                  href={edu.institutionUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="hover:text-accent transition-colors"
+                  className="hover:text-accent transition-colors print:no-underline"
                 >
-                  {entry.institution}
+                  {edu.institution}
                 </a>
-              ) : (
-                entry.institution
-              )}
-            </p>
+              </h3>
+            ) : (
+              <h3 className="text-xs font-semibold text-primary print:text-xs">{edu.institution}</h3>
+            )}
+            <p className="text-xs text-muted print:text-xs">{edu.degree}</p>
+            <p className="text-xs text-muted/70 print:text-xs">{edu.period}</p>
           </div>
         ))}
       </div>
