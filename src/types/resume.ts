@@ -71,7 +71,7 @@ export interface Project {
 }
 
 /** A group of current interests */
-export interface CurrentInterest {
+export interface Interest {
   label: string;
 }
 
@@ -85,7 +85,7 @@ export interface ResumeData {
   education: Education[];
   publications: Publication[];
   skills: SkillGroup[];
-  interests : CurrentInterest[];
+  interests : Interest[];
   volunteering: Volunteering[];
   languages: Language[];
   projects: Project[];
