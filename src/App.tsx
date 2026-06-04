@@ -13,7 +13,6 @@ import {
   Interests,
   Languages,
   Projects,
-  ProfilePicture,
 } from "./components";
 import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
 
@@ -28,7 +27,7 @@ import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
  * (e.g. `https://yoursite.com/?download`).
  */
 export default function App() {
-  const { name, title, summary, contact, experience, education, skills, interests, volunteering, languages, projects } =
+  const { name, title, summary, contact, experience, education, skills, interests, volunteering, languages, projects, profileImage } =
     resumeData;
 
   const hasAutoDownloaded = useRef(false);
@@ -55,7 +54,7 @@ export default function App() {
       <DownloadButton name={name} />
       <div className="page">
         <div className="px-5 py-8 sm:px-10 sm:py-10 md:px-14 md:py-12 print:px-4 print:py-5">
-          <Header name={name} title={title} contact={contact} />
+          <Header name={name} title={title} contact={contact} profileImage={profileImage} />
 
           <div className="grid grid-cols-1 md:grid-cols-[1fr_250px] print:grid-cols-[1fr_250px] gap-x-10 print:gap-x-8 gap-y-2 print:gap-y-0">
             {/* ---- Main column ---- */}
@@ -67,7 +66,6 @@ export default function App() {
 
             {/* ---- Sidebar ---- */}
             <aside>
-              {resumeData.profileImage && (<ProfilePicture imageUrl={resumeData.profileImage} alt={name} />)}
               <EducationSection education={education} />
               <Languages languages={languages} />
               <Skills skills={skills} />
