@@ -5,11 +5,11 @@ interface ProfilePictureProps {
 
 export function ProfilePicture({ imageUrl, alt = "Profile" }: ProfilePictureProps) {
   return (
-    <div className="mb-6">
+    <div className="mb-6 flex justify-center">
       <img
         src={imageUrl}
         alt={alt}
-        className="w-full rounded-lg shadow-md object-cover aspect-square"
+        className="w-32 h-32 rounded-full shadow-md object-cover"
       />
     </div>
   );
