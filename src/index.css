@@ -10,6 +10,9 @@
   --color-page-bg: #e5e7eb;
 }
 
+/* ========================= */
+/* ✅ BASE */
+/* ========================= */
 @layer base {
   html {
     font-size: 16px;
@@ -21,32 +24,38 @@
     @apply bg-page-bg text-primary leading-relaxed;
   }
 
-  /* ---- Wide resume sheet (~30 % wider than A4) ---- */
+  /* ========================= */
+  /* ✅ PAGE (WEB VERSION) */
+  /* ========================= */
   .page {
     @apply bg-white mx-auto;
     width: 100%;
-    max-width: 314mm; /* A4 × 1.5 */
+    max-width: 314mm; /* ✅ large (web only) */
   }
 
-  /* On larger screens: float the sheet with shadow */
+  /* Desktop shadow */
   @media (min-width: 1270px) {
     .page {
       @apply my-10 rounded-sm shadow-[0_2px_20px_rgba(0,0,0,0.08)];
     }
   }
 
-  /* On smaller screens: full-bleed, no shadow, white fills viewport */
+  /* Mobile full-bleed */
   @media (max-width: 1269px) {
     body {
       @apply bg-white;
     }
   }
 
-  /* Print: no shadow, no margin, no background */
+  /* ========================= */
+  /* ✅ PRINT (A4 FIX COMPLET) */
+  /* ========================= */
   @media print {
+
+    /* 📄 A4 strict */
     @page {
       size: A4 portrait;
-      margin: 6mm;
+      margin: 10mm;
     }
 
     html.pdf-export {
@@ -54,16 +63,97 @@
     }
 
     body {
-      @apply bg-white;
+      background: white !important;
+      margin: 0;
+      padding: 0;
+      line-height: 1.4;
     }
 
+    /* ✅ CRITIQUE : largeur réelle A4 */
     .page {
-      width: 100%;
-      max-width: 198mm;
-      min-height: auto;
+      width: 210mm;
+      max-width: 210mm;
       margin: 0 auto;
-      box-shadow: none;
-      border-radius: 0;
+      padding: 0;
+      box-shadow: none !important;
+      border-radius: 0 !important;
+    }
+
+    /* ✅ CRITIQUE : casser le grid (sinon chaos) */
+    .grid {
+      display: block !important;
+    }
+
+    aside {
+      display: block;
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    /* ✅ CRITIQUE : reset layout dangereux */
+    * {
+      position: static !important;
+      float: none !important;
+      overflow: visible !important;
+    }
+
+    /* ✅ éviter les coupures moches */
+    section {
+      display: block;
+      width: 100%;
+      break-inside: avoid;
+      page-break-inside: avoid;
+      margin-bottom: 10px;
+    }
+
+    header {
+      page-break-after: avoid;
+    }
+
+    ul {
+      margin: 4px 0;
+      padding-left: 16px;
+    }
+
+    li {
+      margin-bottom: 2px;
+    }
+
+    /* ✅ typographie compacte */
+    h1 {
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 13px;
+      margin-bottom: 6px;
+    }
+
+    h3 {
+      font-size: 12px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+
+    /* ✅ images propres */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ✅ QR code option */
+    img.qr {
+      width: 80px;
+      height: 80px;
+    }
+
+    /* ✅ cacher UI */
+    button,
+    .print-hidden {
+      display: none !important;
     }
   }
 }
