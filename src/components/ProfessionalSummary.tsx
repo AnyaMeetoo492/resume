@@ -9,7 +9,7 @@ interface ProfessionalSummaryProps {
 /** Renders the professional summary / objective section. */
 export function ProfessionalSummary({ summary }: ProfessionalSummaryProps) {
   return (
-    <Section title="Professional Summary">
+    <Section title="Bio">
       <p className="text-sm leading-relaxed text-primary/85">{summary}</p>
     </Section>
   );
