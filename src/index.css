@@ -52,108 +52,48 @@
   /* ========================= */
   @media print {
 
-    /* 📄 A4 strict */
-    @page {
-      size: A4 portrait;
-      margin: 10mm;
-    }
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
 
-    html.pdf-export {
-      font-size: 12px;
-    }
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: white !important;
+  }
 
-    body {
-      background: white !important;
-      margin: 0;
-      padding: 0;
-      line-height: 1.4;
-    }
+  html.pdf-export {
+    font-size: 16px; /* garde ton design normal */
+  }
 
-    /* ✅ CRITIQUE : largeur réelle A4 */
-    .page {
-      width: 210mm;
-      max-width: 210mm;
-      margin: 0 auto;
-      padding: 0;
-      box-shadow: none !important;
-      border-radius: 0 !important;
-    }
+  /* ✅ CONTENEUR A4 */
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: none !important;
+    border-radius: 0 !important;
 
-    /* ✅ CRITIQUE : casser le grid (sinon chaos) */
-    .grid {
-      display: block !important;
-    }
+    /* ✅ SCALE propre depuis 314 → 210 */
+    transform: scale(0.67);
+    transform-origin: top center;
+  }
 
-    aside {
-      display: block;
-      width: 100%;
-      margin-top: 16px;
-    }
+  /* ✅ IMPORTANT : donne de l’espace pour le scale */
+  body {
+    height: 297mm;
+  }
 
-    /* ✅ CRITIQUE : reset layout dangereux */
-    * {
-      position: static !important;
-      float: none !important;
-      overflow: visible !important;
-    }
+  /* ✅ évite coupures bizarres MAIS garde grid */
+  section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
 
-    /* ✅ éviter les coupures moches */
-    section {
-      display: block;
-      width: 100%;
-      break-inside: avoid;
-      page-break-inside: avoid;
-      margin-bottom: 10px;
-    }
-
-    header {
-      page-break-after: avoid;
-    }
-
-    ul {
-      margin: 4px 0;
-      padding-left: 16px;
-    }
-
-    li {
-      margin-bottom: 2px;
-    }
-
-    /* ✅ typographie compacte */
-    h1 {
-      font-size: 22px;
-      line-height: 1.2;
-    }
-
-    h2 {
-      font-size: 13px;
-      margin-bottom: 6px;
-    }
-
-    h3 {
-      font-size: 12px;
-    }
-
-    p {
-      font-size: 12px;
-    }
-
-    /* ✅ images propres */
-    img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    /* ✅ QR code option */
-    img.qr {
-      width: 80px;
-      height: 80px;
-    }
-
-    /* ✅ cacher UI */
-    button,
-    .print-hidden {
-      display: none !important;
-    }
+  /* ✅ cache bouton */
+  button {
+    display: none !important;
   }
 }
