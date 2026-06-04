@@ -37,10 +37,10 @@ export const resumeData: ResumeData = {
       period: "Mar 2026 - Present",
       bullets: [
         {
-          text: "Developing a system image editing module in C++/Qt for industrial control software used in high-voltage electrical substations.",
+          text: "Developing a system image editing module in C++/Qt for industrial control software ARKENS Studio used by SCLE SFE Clients in high-voltage electrical substations for monitoring.",
         },
-        {
-          text: "Improving customization of monitoring interfaces by integrating SVG-based graphical elements (labels, lines, polygons).",
+        { 
+          text: "Enhanced monitoring (equipment on site) interface customization by integrating dynamic SVG-based graphical elements (labels, lines, polygons) that update as parameters change."        
         },
         {
           text: "Working with R&D Systems Configuration Team across the full software lifecycle: specification, development, testing, and validation.",
@@ -61,7 +61,7 @@ export const resumeData: ResumeData = {
           text: "Reproduced and analyzed UI issues in virtual environments to support automated testing tools.",
         },
         {
-          text: "Contributed to autonomous testing tools with Python and C++, including code refactoring and reviews.",
+          text: "Contributed to the Autonomous testing project with Python and C++, including code refactoring and reviews.",
         },
       ],
     },
