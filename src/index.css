@@ -25,22 +25,22 @@
   }
 
   /* ========================= */
-  /* ✅ PAGE (WEB VERSION) */
+  /* ✅ PAGE WEB (inchangé ✅) */
   /* ========================= */
   .page {
     @apply bg-white mx-auto;
     width: 100%;
-    max-width: 314mm; /* ✅ large (web only) */
+    max-width: 314mm; /* ✅ ton design large */
   }
 
-  /* Desktop shadow */
+  /* Desktop */
   @media (min-width: 1270px) {
     .page {
       @apply my-10 rounded-sm shadow-[0_2px_20px_rgba(0,0,0,0.08)];
     }
   }
 
-  /* Mobile full-bleed */
+  /* Mobile */
   @media (max-width: 1269px) {
     body {
       @apply bg-white;
@@ -48,52 +48,61 @@
   }
 
   /* ========================= */
-  /* ✅ PRINT (A4 FIX COMPLET) */
+  /* ✅ PRINT A4 (FIX PROPRE) */
   /* ========================= */
   @media print {
 
-  @page {
-    size: A4 portrait;
-    margin: 0;
-  }
+    @page {
+      size: A4 portrait;
+      margin: 0;
+    }
 
-  html, body {
-    margin: 0;
-    padding: 0;
-    background: white !important;
-  }
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: white !important;
+    }
 
-  html.pdf-export {
-    font-size: 16px; /* garde ton design normal */
-  }
+    html.pdf-export {
+      font-size: 16px; /* ✅ garde proportions */
+    }
 
-  /* ✅ CONTENEUR A4 */
-  .page {
-    width: 210mm;
-    height: 297mm;
-    margin: 0 auto;
-    overflow: hidden;
-    box-shadow: none !important;
-    border-radius: 0 !important;
+    /* ✅ CONTENEUR PDF */
+    .page {
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto;
+      overflow: hidden;
 
-    /* ✅ SCALE propre depuis 314 → 210 */
-    transform: scale(0.67);
-    transform-origin: top center;
-  }
+      box-shadow: none !important;
+      border-radius: 0 !important;
 
-  /* ✅ IMPORTANT : donne de l’espace pour le scale */
-  body {
-    height: 297mm;
-  }
+      /* ✅ SCALE magique */
+      transform: scale(0.67);
+      transform-origin: top center;
+    }
 
-  /* ✅ évite coupures bizarres MAIS garde grid */
-  section {
-    break-inside: avoid;
-    page-break-inside: avoid;
-  }
+    /* ✅ IMPORTANT sinon ça coupe */
+    body {
+      height: 297mm;
+    }
 
-  /* ✅ cache bouton */
-  button {
-    display: none !important;
+    /* ✅ garde ton layout intact */
+    section {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    /* ✅ images propres */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ✅ cache UI */
+    button,
+    .print-hidden {
+      display: none !important;
+    }
   }
 }
