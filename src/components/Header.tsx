@@ -8,10 +8,11 @@ interface HeaderProps {
   name: string;
   title: string;
   contact: ContactInfo;
+  profileImage?: string;
 }
 
-/** Top section of the resume: name, title, and contact links. */
-export function Header({ name, title, contact }: HeaderProps) {
+/** Top section of the resume: profile picture on left, name/title/contact on right. */
+export function Header({ name, title, contact, profileImage }: HeaderProps) {
   const linkClass = "hover:text-accent transition-colors";
   const iconSize = 13;
 
@@ -82,25 +83,41 @@ export function Header({ name, title, contact }: HeaderProps) {
   }
 
   return (
-    <header className="mb-6 sm:mb-8 print:mb-4 text-center">
-      <h1 className="text-2xl sm:text-3xl md:text-4xl print:text-3xl font-bold tracking-tight text-primary">
-        {name}
-      </h1>
-      <p className="mt-1 print:mt-0.5 text-sm sm:text-base print:text-sm font-medium text-muted">
-        {title}
-      </p>
+    <header className="mb-8 sm:mb-10 print:mb-6">
+      <div className="flex flex-col sm:flex-row sm:items-start gap-6 sm:gap-8">
+        {/* Profile picture on the left */}
+        {profileImage && (
+          <div className="flex-shrink-0">
+            <img
+              src={profileImage}
+              alt={name}
+              className="w-28 h-28 sm:w-32 sm:h-32 rounded-full shadow-md object-cover"
+            />
+          </div>
+        )}
 
-      <div className="mt-3 print:mt-2 flex flex-wrap justify-center gap-y-1 text-xs sm:text-sm print:text-xs text-muted">
-        {items.map((item, idx) => (
-          <span key={idx} className="inline-flex items-center">
-            {idx > 0 && (
-              <span aria-hidden className="mx-2 sm:mx-3 text-divider">
-                &middot;
+        {/* Text content on the right */}
+        <div className="flex-1 text-center sm:text-left">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl print:text-4xl font-bold tracking-tight text-primary leading-tight">
+            {name}
+          </h1>
+          <p className="mt-2 print:mt-1 text-base sm:text-lg print:text-base font-medium text-accent">
+            {title}
+          </p>
+
+          <div className="mt-4 print:mt-3 flex flex-wrap justify-center sm:justify-start gap-y-1.5 text-xs sm:text-sm print:text-xs text-muted">
+            {items.map((item, idx) => (
+              <span key={idx} className="inline-flex items-center">
+                {idx > 0 && (
+                  <span aria-hidden className="mx-2 sm:mx-3 text-divider">
+                    &middot;
+                  </span>
+                )}
+                {item}
               </span>
-            )}
-            {item}
-          </span>
-        ))}
+            ))}
+          </div>
+        </div>
       </div>
     </header>
   );
