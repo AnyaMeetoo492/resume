@@ -1,14 +1,5 @@
-// Erwin Lejeune - 2026-02-16
+// utils/pdf.ts
 
-/**
- * Open browser print-to-PDF flow for the resume.
- *
- * This keeps text selectable and preserves real hyperlinks in the output
- * PDF, unlike rasterized screenshot-based generation.
- *
- * @param _element  Unused placeholder to keep call sites stable.
- * @param filename  Suggested PDF filename (used as temporary document title).
- */
 export async function generateResumePdf(
   _element: HTMLElement,
   filename: string,
@@ -17,7 +8,11 @@ export async function generateResumePdf(
 
   const root = document.documentElement;
   const previousTitle = document.title;
+
+  // Change le nom du fichier PDF
   document.title = filename.replace(/\.pdf$/i, "");
+
+  // Active le mode export
   root.classList.add("pdf-export");
 
   let cleanedUp = false;
@@ -28,22 +23,20 @@ export async function generateResumePdf(
     root.classList.remove("pdf-export");
   };
 
-  // Restore title and temporary export class once print flow ends.
+  // Cleanup automatique après impression
   window.addEventListener("afterprint", cleanup, { once: true });
 
-  // Wait one frame so title/style updates are applied before print dialog opens.
-  await new Promise<void>((resolve) => requestAnimationFrame(() => resolve()));
+  // ✅ Attente stable (corrige les bugs de layout)
+  await new Promise((resolve) => setTimeout(resolve, 120));
+
+  // Ouvre le print dialog
   window.print();
 
-  // Fallback for environments where `afterprint` is unreliable.
+  // Fallback
   setTimeout(cleanup, 3000);
 }
 
-/**
- * Derive a kebab-cased PDF filename from a person's name.
- *
- * @example toResumeFilename("Erwin Lejeune") → "erwin-lejeune-resume.pdf"
- */
+// Génération du nom fichier
 export function toResumeFilename(name: string): string {
   return `${name.toLowerCase().replace(/\s+/g, "-")}-resume.pdf`;
 }
