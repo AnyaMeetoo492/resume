@@ -13,7 +13,7 @@ export function QRCode({ imageUrl, alt = "QR Code" }: QRCodeProps) {
       />
       <div className="flex-1">
         <p className="text-xs text-primary/80 leading-relaxed">
-          Find my profile:
+          Retrouvez mon profil :
           <br />
           <a
             href="https://linktr.ee/anyameetoo"
