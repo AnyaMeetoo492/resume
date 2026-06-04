@@ -8,6 +8,7 @@ export { WorkExperience } from "./WorkExperience";
 export { Publications } from "./Publications";
 export { EducationSection } from "./EducationSection";
 export { Skills } from "./Skills";
+export { Interests } from "./Interests";
 export { Volunteering } from "./Volunteering";
 export { Section } from "./Section";
 export { Languages } from "./Languages";
