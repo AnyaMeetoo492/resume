@@ -43,7 +43,7 @@ export const resumeData: ResumeData = {
           text: "Improving customization of monitoring interfaces by integrating SVG-based graphical elements (labels, lines, polygons).",
         },
         {
-          text: "Working across the full software lifecycle: specification, development, testing, and validation.",
+          text: "Working with R&D Systems Configuration Team across the full software lifecycle: specification, development, testing, and validation.",
         },
       ],
     },
@@ -184,7 +184,7 @@ export const resumeData: ResumeData = {
       title: "Quadruped Robot Locomotion",
       tech: "FPGA · AI · Robotics · Embedded Systems",
       description:
-        "Developed perception and decision systems for an autonomous quadruped robot under embedded constraints.",
+        "Developed perception and decision systems using a depth camera for an autonomous quadruped robot under embedded constraints such as energy consumption.",
       date: "2025 - 2026",
       url: "",
     },
@@ -192,7 +192,7 @@ export const resumeData: ResumeData = {
       title: "Embedded Sailboat Control (STM32)",
       tech: "C · STM32 · GPIO · Timers · Interrupts · UART",
       description:
-        "Implemented low-level drivers and real-time control on STM32 using direct register manipulation.",
+        "Implemented low-level drivers and real-time control on STM32 using direct register manipulation to operate a sailboat under physical constraints.",
       date: "2024 - 2025",
       url: "https://github.com/bongibault-romain/insa-voilier",
     },
@@ -200,7 +200,7 @@ export const resumeData: ResumeData = {
       title: "IoT Smart Gas Sensor",
       tech: "LoRa · Embedded Systems · KiCad · Node-RED",
       description:
-        "Designed an end-to-end IoT system from sensor fabrication to wireless data monitoring.",
+        "Designed an end-to-end IoT system from a gas sensor fabrication to wireless data monitoring.",
       date: "2025 - 2026",
       url: "https://github.com/MOSH-Insa-Toulouse/2025-2026-5ISS-MEETOO-MIRANVILLE-REVELLI",
     },
@@ -208,7 +208,7 @@ export const resumeData: ResumeData = {
       title: "Embedded AI Fall Detection",
       tech: "Python · TensorFlow · CNN · Edge AI",
       description:
-        "Built and optimized a CNN model for real-time fall detection under embedded constraints.",
+        "Built and optimized a CNN model for real-time fall detection under embedded constraints using a dataset library.",
       date: "2025 - 2026",
       url: "",
     },
