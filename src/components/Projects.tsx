@@ -54,7 +54,7 @@ function ProjectEntry({ project }: { project: Project }) {
 /** Projects section */
 export function Projects({ projects }: ProjectsProps) {
   return (
-    <Section title="Projects">
+    <Section title="Projets">
       {projects.map((project, idx) => (
         <ProjectEntry key={idx} project={project} />
       ))}
