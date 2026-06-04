@@ -81,6 +81,7 @@ export interface ResumeData {
   title: string;
   summary: string;
   profileImage?: string;
+  qrCodeImage?: string;
   contact: ContactInfo;
   experience: Experience[];
   education: Education[];

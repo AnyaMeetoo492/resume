@@ -14,3 +14,4 @@ export { Section } from "./Section";
 export { Languages } from "./Languages";
 export { Projects } from "./Projects";
 export { ProfilePicture } from "./ProfilePicture";
+export { QRCode } from "./QRCode";
