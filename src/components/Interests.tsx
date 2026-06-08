@@ -5,12 +5,13 @@ import { Section } from "./Section";
 
 interface InterestsProps {
   interests: Interest[];
+  title: string;
 }
 
 /** Renders current interests as chips. */
-export function Interests({ interests }: InterestsProps) {
+export function Interests({ interests, string }: InterestsProps) {
   return (
-    <Section title="Centres d'intérêts">
+    <Section title={title}>
       <div className="flex flex-wrap gap-1.5">
         {interests.map((interest) => (
           <span
