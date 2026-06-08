@@ -1,9 +1,10 @@
 interface QRCodeProps {
   imageUrl: string;
   alt?: string;
+  title: string;
 }
 
-export function QRCode({ imageUrl, alt = "QR Code" }: QRCodeProps) {
+export function QRCode({ imageUrl, alt = "QR Code", title }: QRCodeProps) {
   return (
     <div className="mt-6 flex items-center gap-4">
       <img
@@ -13,7 +14,7 @@ export function QRCode({ imageUrl, alt = "QR Code" }: QRCodeProps) {
       />
       <div className="flex-1">
         <p className="text-xs text-primary/80 leading-relaxed">
-          Retrouvez mon profil :
+          {title}
           <br />
           <a
             href="https://linktr.ee/anyameetoo"
