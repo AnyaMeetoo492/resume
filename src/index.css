@@ -46,10 +46,11 @@
   @media print {
     @page {
       size: A4 portrait;
+      margin: 2mm;
     }
 
     html.pdf-export {
-      font-size: 11.5px;
+      font-size: 11px;
     }
 
     body {
@@ -65,7 +66,7 @@
       border-radius: 0;
     
       transform: scale(0.92);
-      transform-origin: top center;
+      transform-origin: top left;
     }
 
     .page,
