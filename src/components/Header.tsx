@@ -1,7 +1,7 @@
 // Erwin Lejeune - 2026-02-15
 
 import type { ReactNode } from "react";
-import { Mail, Globe, MapPin, Github, Linkedin, Linktree } from "lucide-react";
+import { Mail, Globe, MapPin, Github, Linkedin } from "lucide-react";
 import type { ContactInfo } from "../types/resume";
 
 interface HeaderProps {
@@ -82,7 +82,7 @@ export function Header({ name, title, contact, profileImage }: HeaderProps) {
         rel="noopener noreferrer"
         className={`inline-flex items-center gap-1 ${linkClass}`}
       >
-        <Linktree size={iconSize} className="shrink-0" />
+        <Globe size={iconSize} className="shrink-0" />
         {contact.linktree}
       </a>,
     );
