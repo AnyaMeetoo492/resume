@@ -7,6 +7,7 @@ import { Section } from "./Section";
 
 interface WorkExperienceProps {
   experience: Experience[];
+  title: string;
 }
 
 const INLINE_LINK_REGEX = /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g;
@@ -91,9 +92,9 @@ function ExperienceEntry({ entry }: { entry: Experience }) {
 }
 
 /** Work experience section listing all positions in chronological order. */
-export function WorkExperience({ experience }: WorkExperienceProps) {
+export function WorkExperience({ experience, title }: WorkExperienceProps) {
   return (
-    <Section title="Expériences Professionnelles">
+    <Section title={title}>
       {experience.map((entry, idx) => (
         <ExperienceEntry key={idx} entry={entry} />
       ))}
