@@ -22,10 +22,29 @@ import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
 
 const labels = {
   fr: {
+    summary: "Profil",
+    experience: "Expériences Professionnelles",
+    education: "Formations",
+    skills: "Compétences",
+    languages: "Langues",
+    projects: "Projets",
+    volunteering: "Bénévolat",
     interests: "Centres d’intérêts",
+    download: "Télécharger le CV",
+    contact: "Contact",
   },
+
   en: {
-    interests: "Interests",
+    summary: "Profile",
+    experience: "Work Experience",
+    education: "Education",
+    skills: "Skills",
+    languages: "Languages",
+    projects: "Projects",
+    volunteering: "Volunteering",
+    interests: "Current Interests",
+    download: "Download CV",
+    contact: "Contact",
   },
 };
 
@@ -143,21 +162,49 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-[1fr_250px] print:grid-cols-[1fr_250px] gap-x-10 print:gap-x-8 gap-y-2 print:gap-y-0">
             {/* Main column */}
             <div>
-              <ProfessionalSummary summary={summary} />
-              <WorkExperience experience={experience} />
-              <Projects projects={projects} />
+              <ProfessionalSummary
+                summary={summary}
+                title={labels[lang].summary}
+              />
+            
+              <WorkExperience
+                experience={experience}
+                title={labels[lang].experience}
+              />
+            
+              <Projects
+                projects={projects}
+                title={labels[lang].projects}
+              />
             </div>
-
+            
             {/* Sidebar */}
             <aside>
-              <EducationSection education={education} />
-              <Languages languages={languages} />
-              <Skills skills={skills} />
-              <Volunteering volunteering={volunteering} />
+              <EducationSection
+                education={education}
+                title={labels[lang].education}
+              />
+            
+              <Languages
+                languages={languages}
+                title={labels[lang].languages}
+              />
+            
+              <Skills
+                skills={skills}
+                title={labels[lang].skills}
+              />
+
+              <Volunteering
+                volunteering={volunteering}
+                title={labels[lang].volunteering}
+              />
+            
               <Interests
                 interests={interests}
                 title={labels[lang].interests}
               />
+            
               {qrCodeImage && (
                 <QRCode imageUrl={qrCodeImage} alt="Contact QR Code" />
               )}
