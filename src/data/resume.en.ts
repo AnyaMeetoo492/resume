@@ -11,7 +11,7 @@ export const resumeEn: ResumeData = {
   profileImage: profilePic,
   qrCodeImage: qrCode,
   summary:
-    "Computer engineering student at INSA Toulouse, specializing in embedded systems and IoT. Passionate about low-level programming, hardware/software integration, and real-time systems. Experience in C, C++, Python, Rust, and Assembly through academic and personal projects in robotics, embedded AI, and connected devices. Currently seeking an embedded software engineering opportunity in France starting September/October 2026.",
+    "Computer engineering student at INSA Toulouse, specializing in embedded systems and IoT. Passionate about low-level programming, hardware/software integration and real-time systems. Experience in C, C++, Python, Rust and Assembly through academic and personal projects in robotics, embedded AI and connected devices. Currently seeking an embedded software engineering opportunity in France starting September/October 2026.",
 
   contact: {
     email: "anyameetoo@gmail.com",
