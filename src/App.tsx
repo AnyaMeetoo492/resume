@@ -32,6 +32,7 @@ const labels = {
     interests: "Centres d’intérêts",
     download: "Télécharger le CV",
     contact: "Contact",
+    qrcode: "Retrouvez mon profil :",
   },
 
   en: {
@@ -45,6 +46,7 @@ const labels = {
     interests: "Current Interests",
     download: "Download CV",
     contact: "Contact",
+    qrcode: "Find my profile:",
   },
 };
 
@@ -206,7 +208,7 @@ export default function App() {
               />
             
               {qrCodeImage && (
-                <QRCode imageUrl={qrCodeImage} alt="Contact QR Code" />
+                <QRCode imageUrl={qrCodeImage} alt="Contact QR Code" title={labels[lang].qrcode} />
               )}
             </aside>
           </div>
