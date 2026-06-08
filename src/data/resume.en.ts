@@ -152,19 +152,25 @@ export const resumeEn: ResumeData = {
   skills: [
     {
       category: "Programming",
-      items: ["C", "C++", "Python", "Java", "Assembly"],
+      items: ["C", "C++", "Python", "Java", "Assembly", "RUST", "JavaScript", "HTML", "C#", "CSS", "SQL"],
     },
     {
-      category: "Embedded Systems",
+      category: "Embedded Systems & IoTs",
       items: [
         "STM32",
-        "GPIO",
-        "Timers",
-        "Interrupts",
-        "UART",
-        "ADC",
-        "PWM",
-        "Hardware/Software Integration",
+        "ESP",
+        "Arduino",
+        "FPGA",
+        "MQTT",
+        "Node-Red",
+        "BLE / Bluetooth",
+        "LoRa",
+        "ZigBee", 
+        "KiCAD",
+        "RTOS",
+        "Embedded Linux",
+        "UART / SPI / I2C / Bus",
+        "CI/CD",
       ],
     },
     {
@@ -172,6 +178,7 @@ export const resumeEn: ResumeData = {
       items: [
         "MATLAB",
         "Qt",
+        "Docker", 
         "Vivado",
         "Eclipse",
         "IntelliJ IDEA",
@@ -180,7 +187,7 @@ export const resumeEn: ResumeData = {
     },
     {
       category: "Development & Platforms",
-      items: ["GitHub", "GitLab", "Jira", "Confluence", "Linux"],
+      items: ["GitHub", "GitLab", "Jira", "Confluence", "Linux", "Windows"],
     },
   ],
 
@@ -195,20 +202,20 @@ export const resumeEn: ResumeData = {
 
   volunteering: [
     {
-      title: "Les Enfoirés de l'INSA — Lead Singer & Member",
+      title: "Les Enfoiros de l'INSA — Lead Singer & Member",
       description: "Organization of charity concerts",
       date: "2024 - 2025",
       url: "https://enfoiros.org/",
     },
     {
-      title: "BEE Club — Member",
-      description: "International student association",
+      title: "BEE Club — Secretary & Member",
+      description: "International students' bureau of INSA Toulouse",
       date: "2022 - 2024",
       url: "https://www.instagram.com/bee_insatoulouse/",
     },
     {
       title: "Psychedelic Trauma — Singer",
-      description: "Music band",
+      description: "Music band pop/rock",
       date: "2023 - 2026",
       url: "",
     },
