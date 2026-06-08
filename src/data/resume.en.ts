@@ -228,7 +228,7 @@ export const resumeEn: ResumeData = {
       title: "Quadruped Robot Locomotion (Research project under supervision of the LAAS/CNRS & INSA Toulouse)",
       tech: "FPGA · AI · Robotics · Embedded Systems",
       description:
-        "Developed perception and researched decision-making systems using a depth camera for an autonomous quadruped robot under embedded constraints (energy, performance).",
+        "Developed perception and researched decision-making systems using a FPGA and a depth camera for an autonomous quadruped robot under embedded constraints (energy, performance).",
       date: "2025 - 2026",
       url: "",
     },
@@ -236,7 +236,7 @@ export const resumeEn: ResumeData = {
       title: "Embedded Sailboat Control (STM32) - Student Project INSA Toulouse",
       tech: "C · Assemnly · STM32 · control via UART GPIO/Timers/Interrupts",
       description:
-        "Implemented low-level drivers and real-time control on STM32 using direct register manipulation to navigate a sailboat.",
+        "Implemented low-level drivers and real-time control on STM32 using direct register manipulation to navigate a model-size sailboat.",
       date: "2024 - 2025",
       url: "https://github.com/bongibault-romain/insa-voilier",
     },
@@ -244,7 +244,7 @@ export const resumeEn: ResumeData = {
       title: "Smart IoT Gas Sensor - Student Project INSA Toulouse",
       tech: "LoRa · Embedded Systems/IoTs · KiCad · Node-RED",
       description:
-        "Designed a complete IoT system from sensor hardware development (nano constructuin of gas sensor) to wireless data monitoring (Arduino UNO with LoRa communication).",
+        "Designed a complete IoT system from sensor hardware development (nano construction of gas sensor) to wireless data monitoring (Arduino UNO with LoRa communication).",
       date: "2025 - 2026",
       url: "https://github.com/MOSH-Insa-Toulouse/2025-2026-5ISS-MEETOO-MIRANVILLE-REVELLI",
     },
