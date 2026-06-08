@@ -41,7 +41,7 @@ export function Header({ name, title, contact, profileImage }: HeaderProps) {
         className={`inline-flex items-center gap-1 ${linkClass}`}
       >
         <Globe size={iconSize} className="shrink-0" />
-        {contact.portfolio.replace(/^https?:\/\//, "")}
+        {contact.portfolio.replace(/^https?:\/\/(www\.)?/, "")}
       </a>,
     );
   }
@@ -49,13 +49,13 @@ export function Header({ name, title, contact, profileImage }: HeaderProps) {
     items.push(
       <a
         key="github"
-        href={`https://github.com/${contact.github}`}
+        href={contact.github}
         target="_blank"
         rel="noopener noreferrer"
         className={`inline-flex items-center gap-1 ${linkClass}`}
       >
         <Github size={iconSize} className="shrink-0" />
-        {contact.github.replace(/^https?:\/\//, "")}
+        {contact.github.replace(/^https?:\/\/(www\.)?/, "")}
       </a>,
     );
   }
@@ -63,13 +63,13 @@ export function Header({ name, title, contact, profileImage }: HeaderProps) {
     items.push(
       <a
         key="linkedin"
-        href={`https://linkedin.com/in/${contact.linkedin}`}
+        href={contact.linkedin}
         target="_blank"
         rel="noopener noreferrer"
         className={`inline-flex items-center gap-1 ${linkClass}`}
       >
         <Linkedin size={iconSize} className="shrink-0" />
-        {contact.linkedin.replace(/^https?:\/\//, "")}
+        {contact.linkedin.replace(/^https?:\/\/(www\.)?/, "")}
       </a>,
     );
   }
@@ -77,13 +77,13 @@ export function Header({ name, title, contact, profileImage }: HeaderProps) {
     items.push(
       <a
         key="linktree"
-        href={`https://linktr.ee/${contact.linktree}`}
+        href={contact.linktree}
         target="_blank"
         rel="noopener noreferrer"
         className={`inline-flex items-center gap-1 ${linkClass}`}
       >
         <Globe size={iconSize} className="shrink-0" />
-        {contact.linktree.replace(/^https?:\/\//, "")}
+        {contact.linktree.replace(/^https?:\/\/(www\.)?/, "")}
       </a>,
     );
   }
