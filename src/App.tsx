@@ -18,7 +18,13 @@ import {
   QRCode,
 } from "./components";
 
-import { generateResumePdf, dataset */import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
+import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
+
+export default function App() {
+  /** Language state */
+  const [lang, setLang] = useState<"fr" | "en">("fr");
+
+  /** Pick dataset */
   const resumeData = lang === "fr" ? resumeFr : resumeEn;
 
   const {
@@ -40,7 +46,7 @@ import { generateResumePdf, dataset */import { generateResumePdf, toResumeFilena
   const hasAutoDownloaded = useRef(false);
   const pageRef = useRef<HTMLDivElement>(null);
 
-  /** 🔹 Init language from URL */
+  /** Init language from URL */
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const urlLang = params.get("lang");
@@ -50,7 +56,7 @@ import { generateResumePdf, dataset */import { generateResumePdf, toResumeFilena
     }
   }, []);
 
-  /** 🔹 Auto PDF download */
+  /** Auto PDF */
   useEffect(() => {
     if (hasAutoDownloaded.current) return;
 
@@ -74,7 +80,7 @@ import { generateResumePdf, dataset */import { generateResumePdf, toResumeFilena
     return () => clearTimeout(timer);
   }, [name, lang]);
 
-  /** Change language + update URL */
+  /** Change language */
   const changeLang = (newLang: "fr" | "en") => {
     setLang(newLang);
 
@@ -89,7 +95,6 @@ import { generateResumePdf, dataset */import { generateResumePdf, toResumeFilena
       <div className="flex justify-between items-center max-w-[1200px] mx-auto mb-4 px-4">
         <DownloadButton name={`${name}-${lang}`} />
 
-        {/* Language switch */}
         <div className="flex gap-2">
           <button
             onClick={() => changeLang("fr")}
@@ -115,7 +120,7 @@ import { generateResumePdf, dataset */import { generateResumePdf, toResumeFilena
         </div>
       </div>
 
-      {/*Page */}
+      {/* Page */}
       <div ref={pageRef} className="page">
         <div className="px-5 py-8 sm:px-10 sm:py-10 md:px-14 md:py-12 print:px-4 print:py-5">
           <Header
@@ -125,9 +130,28 @@ import { generateResumePdf, dataset */import { generateResumePdf, toResumeFilena
             profileImage={profileImage}
           />
 
+          <div className="grid grid-cols-1 md:grid-cols-[1fr_250px] print:grid-cols-[1fr_250px] gap-x-10 print:gap-x-8 gap-y-2 print:gap-y-0">
+            {/* Main column */}
+            <div>
+              <ProfessionalSummary summary={summary} />
+              <WorkExperience experience={experience} />
+              <Projects projects={projects} />
+            </div>
 
-
-export default function App() {
-  /** 🔹 Language state */
-  const [lang, setLang] = useState<"fr" | "en">("fr");
-
+            {/* Sidebar */}
+            <aside>
+              <EducationSection education={education} />
+              <Languages languages={languages} />
+              <Skills skills={skills} />
+              <Volunteering volunteering={volunteering} />
+              <Interests interests={interests} />
+              {qrCodeImage && (
+                <QRCode imageUrl={qrCodeImage} alt="Contact QR Code" />
+              )}
+            </aside>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
