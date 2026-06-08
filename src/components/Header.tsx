@@ -55,7 +55,7 @@ export function Header({ name, title, contact, profileImage }: HeaderProps) {
         className={`inline-flex items-center gap-1 ${linkClass}`}
       >
         <Github size={iconSize} className="shrink-0" />
-        {contact.github}
+        {contact.github.replace(/^https?:\/\//, "")}
       </a>,
     );
   }
@@ -69,7 +69,7 @@ export function Header({ name, title, contact, profileImage }: HeaderProps) {
         className={`inline-flex items-center gap-1 ${linkClass}`}
       >
         <Linkedin size={iconSize} className="shrink-0" />
-        {contact.linkedin}
+        {contact.linkedin.replace(/^https?:\/\//, "")}
       </a>,
     );
   }
@@ -83,7 +83,7 @@ export function Header({ name, title, contact, profileImage }: HeaderProps) {
         className={`inline-flex items-center gap-1 ${linkClass}`}
       >
         <Globe size={iconSize} className="shrink-0" />
-        {contact.linktree}
+        {contact.linktree.replace(/^https?:\/\//, "")}
       </a>,
     );
   }
