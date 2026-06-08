@@ -26,11 +26,14 @@
     @apply bg-white mx-auto;
     width: 100%;
     max-width: 314mm; } /* A4 × 1.5 */
-.page {
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  height: 297mm;
-}
+  .page {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 297mm;
+  }
+    .page {
+    outline: 2px solid red;
+  }
 
   /* On larger screens: float the sheet with shadow */
   @media (min-width: 1270px) {
