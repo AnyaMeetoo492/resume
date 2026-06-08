@@ -1,7 +1,7 @@
 // Erwin Lejeune - 2026-02-15
 
 import type { ReactNode } from "react";
-import { Mail, Globe, MapPin, Github, Linkedin } from "lucide-react";
+import { Mail, Globe, MapPin, Github, Linkedin, Linktree } from "lucide-react";
 import type { ContactInfo } from "../types/resume";
 
 interface HeaderProps {
