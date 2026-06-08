@@ -123,7 +123,7 @@ export default function App() {
   return (
     <>
       {/* Top bar */}
-      <div className="flex justify-between items-center max-w-[1200px] mx-auto mb-4 px-4">
+      <div className="flex justify-between items-center max-w-[1200px] mx-auto mb-4 px-4 print:hidden">
              <DownloadButton
                   name={`${name}-${lang}`}
                   title={labels[lang].download}
