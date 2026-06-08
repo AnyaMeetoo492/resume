@@ -4,6 +4,7 @@ import { Section } from "./Section";
 
 interface ProjectsProps {
   projects: Project[];
+  title: string;
 }
 
 /** Renders a single project entry (same structure as ExperienceEntry). */
@@ -52,9 +53,9 @@ function ProjectEntry({ project }: { project: Project }) {
 }
 
 /** Projects section */
-export function Projects({ projects }: ProjectsProps) {
+export function Projects({ projects, title }: ProjectsProps) {
   return (
-    <Section title="Projets">
+    <Section title={title}>
       {projects.map((project, idx) => (
         <ProjectEntry key={idx} project={project} />
       ))}
