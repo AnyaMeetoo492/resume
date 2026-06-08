@@ -74,7 +74,7 @@ import { generateResumePdf, dataset */import { generateResumePdf, toResumeFilena
     return () => clearTimeout(timer);
   }, [name, lang]);
 
-  /** 🔹 Change language + update URL */
+  /** Change language + update URL */
   const changeLang = (newLang: "fr" | "en") => {
     setLang(newLang);
 
@@ -85,7 +85,7 @@ import { generateResumePdf, dataset */import { generateResumePdf, toResumeFilena
 
   return (
     <>
-      {/* 🔹 Top bar */}
+      {/* Top bar */}
       <div className="flex justify-between items-center max-w-[1200px] mx-auto mb-4 px-4">
         <DownloadButton name={`${name}-${lang}`} />
 
@@ -115,7 +115,7 @@ import { generateResumePdf, dataset */import { generateResumePdf, toResumeFilena
         </div>
       </div>
 
-      {/* 🔹 Page */}
+      {/*Page */}
       <div ref={pageRef} className="page">
         <div className="px-5 py-8 sm:px-10 sm:py-10 md:px-14 md:py-12 print:px-4 print:py-5">
           <Header
