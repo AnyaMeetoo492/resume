@@ -77,7 +77,7 @@ export const resumeEn: ResumeData = {
       company: "Mauritius Telecom",
       companyUrl: "https://www.telecom.mu/",
       location: "Port Louis, Mauritius",
-      role: "Engineering Intern",
+      role: "Mobile and Networks Intern (Quality Assurance)",
       period: "Jul 2024 - Aug 2024",
       bullets: [
         {
@@ -92,7 +92,7 @@ export const resumeEn: ResumeData = {
       company: "SD Worx",
       companyUrl: "https://www.sdworx.com/",
       location: "Mauritius",
-      role: "Software Intern",
+      role: "Web Developer Intern",
       period: "Jul 2022",
       bullets: [
         {
@@ -108,8 +108,8 @@ export const resumeEn: ResumeData = {
   education: [
     {
       degree:
-        "Engineering Degree – Computer Science (Innovative Intelligent Systems)",
-      institution: "INSA Toulouse",
+        "Engineering Degree – Computer Science (specialised in Innovative Smarts Systems)",
+      institution: "INSA Toulouse - IR/ISS",
       institutionUrl: "https://www.insa-toulouse.fr/",
       period: "2022 - 2026",
     },
@@ -120,7 +120,7 @@ export const resumeEn: ResumeData = {
       period: "2021 - 2022",
     },
     {
-      degree: "Higher School Certificate – Mathematics & Computer Science",
+      degree: "Higher School Certificate – Physics, Mathematics & Computer Science",
       institution: "Loreto College Quatre Bornes",
       institutionUrl: "",
       period: "2014 - 2021",
@@ -236,7 +236,7 @@ export const resumeEn: ResumeData = {
       title: "Embedded Sailboat Control (STM32) - Student Project INSA Toulouse",
       tech: "C · Assemnly · STM32 · control via UART GPIO/Timers/Interrupts",
       description:
-        "Implemented low-level drivers and real-time control on STM32 using direct register manipulation.",
+        "Implemented low-level drivers and real-time control on STM32 using direct register manipulation to navigate a sailboat.",
       date: "2024 - 2025",
       url: "https://github.com/bongibault-romain/insa-voilier",
     },
@@ -244,7 +244,7 @@ export const resumeEn: ResumeData = {
       title: "Smart IoT Gas Sensor - Student Project INSA Toulouse",
       tech: "LoRa · Embedded Systems/IoTs · KiCad · Node-RED",
       description:
-        "Designed a complete IoT system from sensor hardware development to wireless data monitoring.",
+        "Designed a complete IoT system from sensor hardware development (nano constructuin of gas sensor) to wireless data monitoring (Arduino UNO with LoRa communication).",
       date: "2025 - 2026",
       url: "https://github.com/MOSH-Insa-Toulouse/2025-2026-5ISS-MEETOO-MIRANVILLE-REVELLI",
     },
@@ -252,7 +252,7 @@ export const resumeEn: ResumeData = {
       title: "Embedded Fall Detection with AI - Student Project INSA Toulouse",
       tech: "Python · TensorFlow · CNN · Edge AI",
       description:
-        "Designed and optimized a CNN model for real-time fall detection under embedded constraints.",
+        "Designed and optimized a CNN model for real-time fall detection under energy and storage constraints.",
       date: "2025 - 2026",
       url: "",
     },
@@ -260,7 +260,7 @@ export const resumeEn: ResumeData = {
       title: "Signal Processing in a laser gun game - Student Project INSA Toulouse",
       tech: "MATLAB · FFT · Signal Processing",
       description:
-        "Implemented frequency-based detection using FFT to identify multiple signals in noisy environments.",
+        "Implemented frequency-based detection using FFT to identify multiple signals in noisy environments to allocate a point system through targets using a laser gun.",
       date: "2024",
       url: "https://github.com/AnyaMeetoo492/BE_CHTI",
     },
