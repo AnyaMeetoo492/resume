@@ -5,12 +5,13 @@ import { Section } from "./Section";
 
 interface EducationSectionProps {
   education: Education[];
+  title: string;
 }
 
 /** Renders educational background. */
-export function EducationSection({ education }: EducationSectionProps) {
+export function EducationSection({ education, title }: EducationSectionProps) {
   return (
-    <Section title="Education">
+    <Section title={title}>
       <div className="space-y-2 print:space-y-1.5">
         {education.map((edu) => (
           <div key={edu.degree}>
