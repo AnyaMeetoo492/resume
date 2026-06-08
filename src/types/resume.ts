@@ -7,6 +7,7 @@ export interface ContactInfo {
   location?: string;
   github?: string;
   linkedin?: string;
+  linktree?: string;
 }
 
 /** A single bullet point in a work experience entry. */
