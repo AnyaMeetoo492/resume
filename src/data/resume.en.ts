@@ -15,7 +15,9 @@ export const resumeEn: ResumeData = {
 
   contact: {
     email: "anyameetoo@gmail.com",
+    linkedin: "https://www.linkedin.com/in/anyameetoo/",
     portfolio: "https://github.com/AnyaMeetoo492",
+    linktree: "https://linktr.ee/anyameetoo",
     location: "Toulouse, France (open to opportunities across France)",
   },
 
@@ -54,10 +56,10 @@ export const resumeEn: ResumeData = {
       ],
     },
     {
-      company: "Qt Company",
+      company: "The Qt Company",
       companyUrl: "https://www.qt.io/",
       location: "Hamburg, Germany",
-      role: "Software Engineering Intern (R&D Quality Assurance)",
+      role: "Software Engineering Intern (R&D Quality Assurance) - ERASMUS Internship",
       period: "Jun 2025 - Sept 2025",
       bullets: [
         {
@@ -223,31 +225,31 @@ export const resumeEn: ResumeData = {
 
   projects: [
     {
-      title: "Quadruped Robot Locomotion",
+      title: "Quadruped Robot Locomotion (Research project under supervision of the LAAS/CNRS & INSA Toulouse)",
       tech: "FPGA · AI · Robotics · Embedded Systems",
       description:
-        "Developed perception and decision-making systems using a depth camera for an autonomous quadruped robot under embedded constraints (energy, performance).",
+        "Developed perception and researched decision-making systems using a depth camera for an autonomous quadruped robot under embedded constraints (energy, performance).",
       date: "2025 - 2026",
       url: "",
     },
     {
-      title: "Embedded Sailboat Control (STM32)",
-      tech: "C · STM32 · GPIO · Timers · Interrupts · UART",
+      title: "Embedded Sailboat Control (STM32) - Student Project INSA Toulouse",
+      tech: "C · Assemnly · STM32 · control via UART GPIO/Timers/Interrupts",
       description:
         "Implemented low-level drivers and real-time control on STM32 using direct register manipulation.",
       date: "2024 - 2025",
       url: "https://github.com/bongibault-romain/insa-voilier",
     },
     {
-      title: "Smart IoT Gas Sensor",
-      tech: "LoRa · Embedded Systems · KiCad · Node-RED",
+      title: "Smart IoT Gas Sensor - Student Project INSA Toulouse",
+      tech: "LoRa · Embedded Systems/IoTs · KiCad · Node-RED",
       description:
         "Designed a complete IoT system from sensor hardware development to wireless data monitoring.",
       date: "2025 - 2026",
       url: "https://github.com/MOSH-Insa-Toulouse/2025-2026-5ISS-MEETOO-MIRANVILLE-REVELLI",
     },
     {
-      title: "Embedded Fall Detection with AI",
+      title: "Embedded Fall Detection with AI - Student Project INSA Toulouse",
       tech: "Python · TensorFlow · CNN · Edge AI",
       description:
         "Designed and optimized a CNN model for real-time fall detection under embedded constraints.",
@@ -255,7 +257,7 @@ export const resumeEn: ResumeData = {
       url: "",
     },
     {
-      title: "Signal Processing – Laser Game",
+      title: "Signal Processing in a laser gun game - Student Project INSA Toulouse",
       tech: "MATLAB · FFT · Signal Processing",
       description:
         "Implemented frequency-based detection using FFT to identify multiple signals in noisy environments.",
