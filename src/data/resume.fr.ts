@@ -4,7 +4,7 @@ import type { ResumeData } from "../types/resume";
 import profilePic from "./profile.jpg";
 import qrCode from "./qr_code.jpg";
 
-export const resumeData: ResumeData = {
+export const resumeFr: ResumeData = {
   name: "Anya Meetoo",
   title: "Étudiante en ingénierie informatique | IoT, développement logiciel, systèmes embarqués, robotique et IA | Diplôme prévu en septembre 2026",
   profileImage: profilePic,
