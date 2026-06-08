@@ -6,12 +6,13 @@ import { Section } from "./Section";
 
 interface VolunteeringProps {
   volunteering: Volunteering[];
+  title: string;
 }
 
 /** Renders a condensed list of academic volunteerings. */
-export function Volunteering({ volunteering }: VolunteeringProps) {
+export function Volunteering({ volunteering, title}: VolunteeringProps) {
   return (
-    <Section title="Volontariat">
+    <Section title={title}>
       <ul className="space-y-2.5">
         {volunteering.map((pub, idx) => (
           <li key={idx}>
