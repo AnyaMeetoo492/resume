@@ -22,11 +22,15 @@
   }
 
   /* ---- Wide resume sheet (~30 % wider than A4) ---- */
-  .page {
+  /* .page {
     @apply bg-white mx-auto;
     width: 100%;
-    max-width: 314mm; /* A4 × 1.5 */
-  }
+    max-width: 314mm; } /* A4 × 1.5 */
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 297mm;
+}
 
   /* On larger screens: float the sheet with shadow */
   @media (min-width: 1270px) {
@@ -36,40 +40,36 @@
   }
 
   /* On smaller screens: full-bleed, no shadow, white fills viewport */
-  @media (max-width: 1269px) {
-    body {
-      @apply bg-white;
-    }
+  @media print {
+  @page {
+    size: A4;
+    margin: 10mm;
   }
 
-  /* Print: no shadow, no margin, no background */
-  @media print {
-    @page {
-      size: A4;
-      margin: 10mm;
-    }
-  
-    html, body {
-      background: white !important;
-    }
-  
-    .page {
-      width: 210mm;
-      max-width: 210mm;
-      margin: 0;
-      box-shadow: none;
-      border-radius: 0;
-      transform: none !important;
-    }
-  
-    /* IMPORTANT: ne pas bloquer tous les breaks */
-    section {
-      break-inside: auto;
-    }
-  
-    .no-break {
-      break-inside: avoid;
-      page-break-inside: avoid;
-    }
+  html, body {
+    background: white !important;
   }
+
+  .page {
+    width: 190mm;   /* 210 - margins */
+    min-height: 277mm;
+    max-height: 277mm;
+
+    margin: 0 auto;
+    box-shadow: none;
+    border-radius: 0;
+
+    transform: none !important;
+    overflow: hidden; /* IMPORTANT */
+  }
+    
+  .page > div {
+    padding: 8mm !important;
+  }
+    
+  .no-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
 }
