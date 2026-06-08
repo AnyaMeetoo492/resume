@@ -260,7 +260,7 @@ export const resumeEn: ResumeData = {
       title: "Signal Processing in a laser gun game - Student Project INSA Toulouse",
       tech: "MATLAB · FFT · Signal Processing",
       description:
-        "Implemented frequency-based detection using FFT to identify multiple signals in noisy environments to allocate a point system through targets using a laser gun.",
+        "Implemented frequency-based detection using FFT to identify multiple signals in noisy environments to allocate points through targets using a laser gun.",
       date: "2024",
       url: "https://github.com/AnyaMeetoo492/BE_CHTI",
     },
