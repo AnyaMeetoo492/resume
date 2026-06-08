@@ -15,8 +15,8 @@ export const resumeEn: ResumeData = {
 
   contact: {
     email: "anyameetoo@gmail.com",
-    linkedin: "https://www.linkedin.com/in/anyameetoo/",
-    portfolio: "https://github.com/AnyaMeetoo492",
+    linkedin: "https://linkedin.com/in/anyameetoo/",
+    github: "https://github.com/AnyaMeetoo492",
     linktree: "https://linktr.ee/anyameetoo",
     location: "Toulouse, France (open to opportunities across France)",
   },
