@@ -73,6 +73,20 @@ export function Header({ name, title, contact, profileImage }: HeaderProps) {
       </a>,
     );
   }
+  if (contact.linktree) {
+    items.push(
+      <a
+        key="linktree"
+        href={`https://linktr.ee/${contact.linktree}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className={`inline-flex items-center gap-1 ${linkClass}`}
+      >
+        <Linktree size={iconSize} className="shrink-0" />
+        {contact.linktree}
+      </a>,
+    );
+  }
   if (contact.location) {
     items.push(
       <span key="location" className="inline-flex items-center gap-1">
