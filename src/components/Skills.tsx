@@ -5,12 +5,13 @@ import { Section } from "./Section";
 
 interface SkillsProps {
   skills: SkillGroup[];
+  title: string;
 }
 
 /** Renders technology / skills grouped by category. */
-export function Skills({ skills }: SkillsProps) {
+export function Skills({ skills, title }: SkillsProps) {
   return (
-    <Section title="Technologies">
+    <Section title={title}>
       <div className="space-y-3">
         {skills.map((group, idx) => (
           <div key={idx}>
