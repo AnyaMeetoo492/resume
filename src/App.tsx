@@ -20,6 +20,16 @@ import {
 
 import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
 
+const labels = {
+  fr: {
+    interests: "Centres d’intérêts",
+  },
+  en: {
+    interests: "Interests",
+  },
+};
+
+
 export default function App() {
   /** Language state */
   const [lang, setLang] = useState<"fr" | "en">("fr");
@@ -144,7 +154,10 @@ export default function App() {
               <Languages languages={languages} />
               <Skills skills={skills} />
               <Volunteering volunteering={volunteering} />
-              <Interests interests={interests} />
+              <Interests
+                interests={interests}
+                title={labels[lang].interests}
+              />
               {qrCodeImage && (
                 <QRCode imageUrl={qrCodeImage} alt="Contact QR Code" />
               )}
