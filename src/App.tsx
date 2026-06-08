@@ -124,7 +124,10 @@ export default function App() {
     <>
       {/* Top bar */}
       <div className="flex justify-between items-center max-w-[1200px] mx-auto mb-4 px-4">
-        <DownloadButton name={`${name}-${lang}` title={labels[lang].download}} />
+             <DownloadButton
+                  name={`${name}-${lang}`}
+                  title={labels[lang].download}
+              />
 
         <div className="flex gap-2">
           <button
