@@ -7,6 +7,7 @@ import { generateResumePdf, toResumeFilename } from "../lib/generatePdf";
 interface DownloadButtonProps {
   /** Full name — used to derive the download filename. */
   name: string;
+  title: string;
 }
 
 /**
@@ -17,7 +18,7 @@ interface DownloadButtonProps {
  * - Hidden when printing (`print:hidden`).
  * - Shows a spinner while print flow is being prepared.
  */
-export function DownloadButton({ name }: DownloadButtonProps) {
+export function DownloadButton({ name, title }: DownloadButtonProps) {
   const [generating, setGenerating] = useState(false);
 
   const handleDownload = useCallback(async () => {
@@ -39,7 +40,7 @@ export function DownloadButton({ name }: DownloadButtonProps) {
       onClick={handleDownload}
       disabled={generating}
       className="fixed bottom-6 right-6 z-50 inline-flex cursor-pointer items-center gap-2 rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-white shadow-lg transition-all hover:brightness-110 hover:shadow-xl active:scale-95 disabled:cursor-wait disabled:opacity-70 print:hidden"
-      aria-label="Print or save resume as PDF"
+      aria-label={title}
     >
       {generating ? (
         <Loader2 size={16} className="shrink-0 animate-spin" />
