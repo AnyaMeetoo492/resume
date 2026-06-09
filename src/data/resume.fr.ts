@@ -11,7 +11,7 @@ export const resumeFr: ResumeData = {
   profileImage: profilePic,
   qrCodeImage: qrCode,
   summary:
-    "Étudiante en génie informatique à l’INSA Toulouse, spécialisée en systèmes embarqués et IoT. Passionnée par la programmation bas niveau, l’intégration matériel/logiciel et les systèmes temps réel. Expérience en C, C++, Python, Rust et Assembleur à travers des projets académiques et personnels en robotique, IA embarquée et objets connectés. Actuellement à la recherche d’une opportunité en ingénierie logicielle embarquée en France à partir de septembre/octobre 2026.",
+    "Étudiante en Génie Informatique & Réseaux à l’INSA Toulouse, spécialisée en systèmes embarqués et IoT. Passionnée par la programmation bas niveau, l’intégration matériel/logiciel et les systèmes temps réel. Expérience en C, C++, Python, Rust et Assembleur à travers des projets académiques et personnels en robotique, IA embarquée et objets connectés. Actuellement à la recherche d’une opportunité en ingénierie logicielle embarquée en France à partir de septembre/octobre 2026.",
 
   contact: {
     email: "anyameetoo@gmail.com",
