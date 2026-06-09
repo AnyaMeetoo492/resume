@@ -164,6 +164,7 @@ export const resumeFr: ResumeData = {
         "ESP",
         "Arduino",
         "FPGA",
+        "IHM",
         "MQTT",
         "Node-Red",
         "BLE / Bluetooth",
