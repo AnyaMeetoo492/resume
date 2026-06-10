@@ -191,7 +191,7 @@ export const resumeEn: ResumeData = {
     },
     {
       category: "Development & Platforms",
-      items: ["GitHub", "GitLab", "Jira", "Confluence", "Linux", "Windows"],
+      items: ["Git", "SVN", "GitHub", "GitLab", "Jira", "Confluence", "Linux", "Microsoft Windows"],
     },
   ],
 
