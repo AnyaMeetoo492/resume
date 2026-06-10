@@ -154,7 +154,7 @@ export const resumeEn: ResumeData = {
   skills: [
     {
       category: "Programming",
-      items: ["C", "C++", "Python", "Java", "Assembly", "RUST", "JavaScript", "HTML", "C#", "CSS", "SQL"],
+      items: ["C", "C++", "Python", "Java", "Assembly", "RUST", "ADA", "JavaScript", "HTML", "C#", "CSS", "SQL"],
     },
     {
       category: "Embedded Systems & IoTs",
