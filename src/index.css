@@ -36,37 +36,36 @@
 
   /* On smaller screens: full-bleed, no shadow, white fills viewport */
   @media print {
-  @page {
-    size: A4;
-    margin: 5mm; 
-  }
-
-  html, body {
-    background: white !important;
-    font-size: 14px;
-    width: 100%;
-  }
-
-  .page {
-    width: 100%;
-    max-width: 100% !important;
-    margin: 0;
-    padding: 0;
-
-    box-shadow: none;
-    border-radius: 0;
-    transform: none !important;
-    overflow: visible;
-  }
-
-  .page > div {
-    padding: 4mm !important;
-  }
-
-  body {
-    zoom: 0.90; 
-  }
-}
+    @page {
+      size: A4;
+      margin: 5mm; 
+    }
+  
+    html, body {
+      background: white !important;
+      font-size: 14px;
+      width: 100%;
+    }
+  
+    .page {
+      width: 100%;
+      max-width: 100% !important;
+      margin: 0;
+      padding: 0;
+  
+      box-shadow: none;
+      border-radius: 0;
+      transform: none !important;
+      overflow: visible;
+    }
+  
+    .page > div {
+      padding: 4mm !important;
+    }
+  
+    body {
+      zoom: 0.90; 
+    }
   }
 
 }
