@@ -42,7 +42,7 @@ export const resumeEn: ResumeData = {
       companyUrl: "https://www.scle.fr/",
       location: "Toulouse, France",
       role: "Software Engineering Intern (R&D)",
-      period: "Mar 2026 - Present",
+      period: "Mar 2026 - Aug 2026",
       bullets: [
         {
           text: "Developed a system image editing module in C++/Qt for ARKENS Studio, an industrial software used by SCLE SFE clients in high-voltage electrical substations.",
