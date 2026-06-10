@@ -41,30 +41,68 @@
       margin: 10mm;
     }
   
+    /* Reset général */
     html, body {
       background: white !important;
+      font-size: 14px; /* ↓ réduit globalement */
     }
   
+    /* Conteneur page */
     .page {
-      width: 100%;           
-      min-height: auto;      
+      width: 100%;
       margin: 0;
       padding: 0;
   
       box-shadow: none;
       border-radius: 0;
       transform: none !important;
-  
-      overflow: visible;  
+      overflow: visible;
     }
   
+    /* Padding interne plus compact */
     .page > div {
-      padding: 6mm !important;  /* tighter but readable */
+      padding: 5mm !important;
     }
   
+    /* HEADER COMPACT (clé du problème) */
+    header {
+      padding: 4mm 0 !important;
+    }
+  
+    header h1 {
+      font-size: 16pt !important;
+      line-height: 1.1;
+      margin-bottom: 2mm;
+    }
+  
+    header h2,
+    header p {
+      font-size: 9pt !important;
+      margin: 0;
+    }
+  
+    /* Espacements réduits */
+    h1, h2, h3 {
+      margin: 3px 0 !important;
+    }
+  
+    p {
+      margin: 2px 0 !important;
+    }
+  
+    section {
+      margin-bottom: 4mm !important;
+    }
+  
+    /* Évite les coupures moches */
     .no-break {
       break-inside: avoid;
       page-break-inside: avoid;
+    }
+  
+    /* Hack magique pour tenir sur 1 page */
+    body {
+      zoom: 0.95;
     }
   }
 
