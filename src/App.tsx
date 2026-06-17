@@ -163,6 +163,7 @@ export default function App() {
               <Header
                 name={name}
                 title={title}
+                contact={}
                 profileImage={profileImage}
               />
               
@@ -192,10 +193,8 @@ export default function App() {
               
                   <ul className="text-sm space-y-1">
                     {contact.email && <li>{contact.email}</li>}
-                    {contact.phone && <li>{contact.phone}</li>}
                     {contact.linkedin && <li>{contact.linkedin}</li>}
                     {contact.github && <li>{contact.github}</li>}
-                    {contact.website && <li>{contact.website}</li>}
                     {contact.location && <li>{contact.location}</li>}
                   </ul>
                 </div>
