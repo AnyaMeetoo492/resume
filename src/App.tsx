@@ -16,6 +16,7 @@ import {
   Languages,
   Projects,
   QRCode,
+  Contact,
 } from "./components";
 
 import { generateResumePdf, toResumeFilename } from "./lib/generatePdf";
@@ -184,20 +185,10 @@ export default function App() {
             
             {/* Sidebar */}
             <aside>
-
-                <div className="mb-4">
-                  <h2 className="text-sm font-semibold uppercase tracking-wide mb-2">
-                    {labels[lang].contact}
-                  </h2>
               
-                  <ul className="text-sm space-y-1">
-                    {contact.email && <li>{contact.email}</li>}
-                    {contact.linkedin && <li>{contact.linkedin}</li>}
-                    {contact.github && <li>{contact.github}</li>}
-                    {contact.location && <li>{contact.location}</li>}
-                  </ul>
-                </div>
-
+              <Contact 
+                contact={contact}
+              />
               
               <EducationSection
                 education={education}
