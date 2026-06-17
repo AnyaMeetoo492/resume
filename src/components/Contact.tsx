@@ -7,7 +7,7 @@ interface ContactSectionProps {
   title: string;
 }
 
-export function ContactSection({ contact = {}, title }: ContactSectionProps) {
+export function Contact({ contact = {}, title }: ContactSectionProps) {
   const iconSize = 13;
   const linkClass = "inline-flex items-center gap-1 hover:text-accent transition-colors";
 
