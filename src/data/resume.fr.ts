@@ -11,7 +11,7 @@ export const resumeFr: ResumeData = {
   profileImage: profilePic,
   qrCodeImage: qrCode,
   summary:
-    "Étudiante en Génie Informatique & Réseaux à l’INSA Toulouse, spécialisée en objets connectés (IoT) et systèmes embarqués. Passionnée par la programmation bas niveau, l’intégration matériel/logiciel et les systèmes temps réel. Expérience en C, C++, Python, Rust et Assembleur à travers des projets académiques et personnels en robotique, IA embarquée et objets connectés. Actuellement à la recherche d’une opportunité en ingénierie logicielle embarquée en France à partir de septembre/octobre 2026.",
+    "Étudiante en génie informatique à l’INSA Toulouse, spécialisée en IoT et systèmes embarqués, je m’intéresse à la programmation bas niveau, aux systèmes temps réel et à l’intégration matériel/logiciel. J’ai des compétences en C, C++, Python, Rust et Assembleur grâce à plusieurs projets. Je cherche une opportunité en ingénierie logicielle embarquée/objets connectés en France à partir de septembre/octobre 2026.",
 
   contact: {
     email: "anyameetoo@gmail.com",
@@ -41,17 +41,11 @@ export const resumeFr: ResumeData = {
       company: "SCLE SFE",
       companyUrl: "https://www.scle.fr/",
       location: "Toulouse, France",
-      role: "Stagiaire ingénieure logiciel (R&D)",
+      role: "Stagiaire ingénieure logiciel (R&D configuration des systèmes)",
       period: "Mars 2026 - Présent",
       bullets: [
         {
-          text: "Développement d’un module d’édition d’images système en C++/Qt pour ARKENS Studio, un logiciel industriel utilisé par les clients de SCLE SFE dans les postes électriques haute tension.",
-        },
-        {
-          text: "Amélioration de la personnalisation de l’interface en intégrant des éléments graphiques dynamiques basés sur SVG (labels, lignes, polygones) mis à jour selon les paramètres système.",
-        },
-        {
-          text: "Collaboration avec l’équipe R&D configuration des systèmes sur l’ensemble du cycle logiciel : spécification, développement, tests et validation.",
+          text: "Développement d’un module d’édition d’images système plus ergonomique en C++/Qt pour ARKENS Studio, un logiciel industriel utilisé par les clients de SCLE SFE dans les postes électriques haute tension. Le logiciel utilise des éléments graphiques dynamiques basés sur SVG (labels, lignes, polygones) mis à jour selon les paramètres système.",
         },
       ],
     },
