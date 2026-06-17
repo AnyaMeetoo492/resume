@@ -45,7 +45,7 @@ export const resumeFr: ResumeData = {
       period: "Mars 2026 - Présent",
       bullets: [
         {
-          text: "Développement d’un module d’édition d’images système plus ergonomique en C++/Qt pour ARKENS Studio, un logiciel industriel utilisé par les clients de SCLE SFE dans les postes électriques haute tension. Le logiciel utilise des éléments graphiques dynamiques basés sur SVG (labels, lignes, polygones) mis à jour selon les paramètres système.",
+          text: "Développement d’un module d’édition d’images plus ergonomique en C++/Qt pour ARKENS Studio (logiciel industriel pour postes haute tension), utilisant des éléments graphiques dynamiques en SVG mis à jour selon les paramètres système.",
         },
       ],
     },
