@@ -12,7 +12,7 @@ interface HeaderProps {
 }
 
 /** Top section of the resume: profile picture on left, name/title/contact on right. */
-export function Header({ name, title, contact, profileImage }: HeaderProps) {
+export function Header({ name, title, contact={}, profileImage }: HeaderProps) {
   const linkClass = "hover:text-accent transition-colors";
   const iconSize = 13;
 
