@@ -57,13 +57,7 @@ export const resumeFr: ResumeData = {
       period: "Juin 2025 - Sept. 2025",
       bullets: [
         {
-          text: "Création d’un jeu de données de crashs d’interface provenant d’applications Qt open-source à l’aide de Python et d’API REST.",
-        },
-        {
-          text: "Reproduction et analyse de bugs UI dans des environnements virtualisés pour soutenir les outils de test automatisés.",
-        },
-        {
-          text: "Contribution à des projets de tests autonomes en Python et C++, incluant refactorisation et revues de code.",
+          text: "Création d’un jeu de données de crashs d’interface à partir d’applications Qt open-source avec Python et des API REST, reproduction et analyse de bugs UI en environnement virtualisé, et contribution à des projets de tests automatisés en Python et C++ (refactorisation, revues de code).",
         },
       ],
     },
@@ -75,10 +69,7 @@ export const resumeFr: ResumeData = {
       period: "Juil. 2024 - Août 2024",
       bullets: [
         {
-          text: "Étude des architectures réseaux mobiles et fixes (4G/5G, FTTH, réseaux IP cœur).",
-        },
-        {
-          text: "Développement d’un tableau de bord Power BI pour l’analyse des données des antennes télécoms via bases SQL.",
+          text: "Étude des architectures réseaux mobiles et fixes (4G/5G, FTTH, réseaux IP cœur). Développement d’un tableau de bord Power BI pour l’analyse des données des antennes télécoms via bases SQL.",
         },
       ],
     },
@@ -90,10 +81,7 @@ export const resumeFr: ResumeData = {
       period: "Juil. 2022",
       bullets: [
         {
-          text: "Introduction au développement web full-stack (HTML, CSS, C#, SQL).",
-        },
-        {
-          text: "Développement de petites applications et découverte des bases de données et de la logique backend.",
+          text: "Introduction au développement web full-stack (HTML, CSS, C#, SQL) de petites applications web.",
         },
       ],
     },
