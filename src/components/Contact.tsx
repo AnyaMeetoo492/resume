@@ -1,4 +1,5 @@
-import type { ReactNode } from "react";import type { ReactNode } from { Mail, Globe, MapPin, Github, Linkedin } from "lucide-react";
+import type { ReactNode } from "react";
+import type { ReactNode } from { Mail, Globe, MapPin, Github, Linkedin } from "lucide-react";
 import type { ContactInfo } from "../types/resume";
 
 interface ContactProps {
