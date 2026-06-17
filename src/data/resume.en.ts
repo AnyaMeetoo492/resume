@@ -1,17 +1,11 @@
-// Erwin Lejeune - 2026-02-15
-
-import type { ResumeData } from "../types/resume";
-import profilePic from "./profile.jpg";
-import qrCode from "./qr_code.jpg";
-
 export const resumeEn: ResumeData = {
   name: "Anya Meetoo",
   title:
-    "Computer Engineering Student | IoT, Software Development, Embedded Systems, Robotics & AI | Graduation expected September 2026",
+    "Computer Science & Networks Engineering Student – IoT, Software Development, Embedded Systems, Robotics & AI – Expected Graduation: September 2026",
   profileImage: profilePic,
   qrCodeImage: qrCode,
   summary:
-    "Computer engineering student at INSA Toulouse, specializing in connected objects (IoT) and embedded systems. Passionate about low-level programming, hardware/software integration and real-time systems. Experience in C, C++, Python, Rust and Assembly through academic and personal projects in robotics, embedded AI and connected devices. Currently seeking an embedded software engineering opportunity in France starting September/October 2026.",
+    "Computer Science and Networks Engineering student at INSA Toulouse, specializing in IoT and embedded systems. Interested in low-level programming, real-time systems, and hardware/software integration. Skilled in C, C++, Python, Rust, and Assembly through various projects. Currently seeking an opportunity in embedded software engineering / connected systems in France starting September/October 2026.",
 
   contact: {
     email: "anyameetoo@gmail.com",
@@ -41,17 +35,11 @@ export const resumeEn: ResumeData = {
       company: "SCLE SFE",
       companyUrl: "https://www.scle.fr/",
       location: "Toulouse, France",
-      role: "Software Engineering Intern (R&D)",
-      period: "Mar 2026 - Aug 2026",
+      role: "Software Engineering Intern (R&D System Configuration)",
+      period: "March 2026 - Present",
       bullets: [
         {
-          text: "Developed a system image editing module in C++/Qt for ARKENS Studio, an industrial software used by SCLE SFE clients in high-voltage electrical substations.",
-        },
-        {
-          text: "Enhanced UI customization by integrating dynamic SVG-based graphical elements (labels, lines, polygons) updated according to system parameters.",
-        },
-        {
-          text: "Collaborated with the Systems Configuration R&D team across the full software lifecycle: specification, development, testing, and validation.",
+          text: "Developed a more ergonomic image editing module in C++/Qt for ARKENS Studio (industrial software for high-voltage substations), using dynamic SVG-based graphical elements (labels, lines, polygons) updated according to system parameters.",
         },
       ],
     },
@@ -59,17 +47,11 @@ export const resumeEn: ResumeData = {
       company: "The Qt Company",
       companyUrl: "https://www.qt.io/",
       location: "Hamburg, Germany",
-      role: "Software Engineering Intern (R&D Quality Assurance) - ERASMUS Internship",
-      period: "Jun 2025 - Sept 2025",
+      role: "Software Engineering Intern (R&D Quality Assurance) – ERASMUS Internship",
+      period: "June 2025 - Sept. 2025",
       bullets: [
         {
-          text: "Built a dataset of UI crashes from open-source Qt applications using Python and REST APIs.",
-        },
-        {
-          text: "Reproduced and analyzed UI issues in virtualized environments to support automated testing tools.",
-        },
-        {
-          text: "Contributed to autonomous testing projects using Python and C++, including refactoring and code reviews.",
+          text: "Built a dataset of UI crashes from open-source Qt applications using Python and REST APIs, reproduced and analyzed UI bugs in virtualized environments, and contributed to automated testing projects in Python and C++ (refactoring, code reviews).",
         },
       ],
     },
@@ -77,14 +59,11 @@ export const resumeEn: ResumeData = {
       company: "Mauritius Telecom",
       companyUrl: "https://www.telecom.mu/",
       location: "Port Louis, Mauritius",
-      role: "Mobile and Networks Intern (Quality Assurance)",
-      period: "Jul 2024 - Aug 2024",
+      role: "Mobile Networks & Telecommunications Intern (QA)",
+      period: "July 2024 - Aug. 2024",
       bullets: [
         {
-          text: "Studied mobile and fixed network architectures (4G/5G, FTTH, core IP networks).",
-        },
-        {
-          text: "Developed a Power BI dashboard to analyze telecom tower data using SQL databases.",
+          text: "Studied mobile and fixed network architectures (4G/5G, FTTH, core IP networks) and developed a Power BI dashboard to analyze telecom antenna data using SQL databases.",
         },
       ],
     },
@@ -92,14 +71,11 @@ export const resumeEn: ResumeData = {
       company: "SD Worx",
       companyUrl: "https://www.sdworx.com/",
       location: "Mauritius",
-      role: "Web Developer Intern",
-      period: "Jul 2022",
+      role: "Web Development Intern",
+      period: "July 2022",
       bullets: [
         {
-          text: "Introduced to full-stack web development (HTML, CSS, C#, SQL).",
-        },
-        {
-          text: "Developed simple applications and gained experience in databases and backend logic.",
+          text: "Introduced to full-stack web development (HTML, CSS, C#, SQL) through small web application projects.",
         },
       ],
     },
@@ -108,19 +84,20 @@ export const resumeEn: ResumeData = {
   education: [
     {
       degree:
-        "Engineering Degree – Computer Science (specialised in Innovative Smarts Systems)",
+        "Engineering Degree in Computer Science & Networks (Intelligent and Innovative Systems specialization)",
       institution: "INSA Toulouse - IR/ISS",
       institutionUrl: "https://www.insa-toulouse.fr/",
       period: "2022 - 2026",
     },
     {
-      degree: "Bachelor Year 1 – Computer Science",
+      degree: "First Year Bachelor's Degree – Computer Science",
       institution: "Université Paul Sabatier Toulouse III",
       institutionUrl: "https://www.univ-tlse3.fr/",
       period: "2021 - 2022",
     },
     {
-      degree: "Higher School Certificate – Physics, Mathematics & Computer Science",
+      degree:
+        "High School Diploma – Physics, Mathematics & Computer Science",
       institution: "Loreto College Quatre Bornes",
       institutionUrl: "",
       period: "2014 - 2021",
@@ -130,7 +107,7 @@ export const resumeEn: ResumeData = {
   publications: [
     {
       title:
-        "Bird-Inspired Flocking Based on Decentralized Acceleration",
+        "Decentralized Acceleration-Based Bird-Inspired Flocking",
       venue: "IEEE/RSJ IROS 2024",
       date: "October 2024",
       url: "https://www.researchgate.net/publication/387418977_Decentralized_Acceleration-Based_Bird-Inspired_Flocking",
@@ -154,23 +131,22 @@ export const resumeEn: ResumeData = {
   skills: [
     {
       category: "Programming",
-      items: ["C", "C++", "Python", "Java", "Assembly", "RUST", "ADA", "JavaScript", "HTML", "C#", "CSS", "SQL"],
+      items: ["C", "C++", "Python", "Java", "Assembly", "Rust", "Ada", "JavaScript", "HTML", "C#", "CSS", "SQL"],
     },
     {
-      category: "Embedded Systems & IoTs",
+      category: "Embedded Systems & IoT",
       items: [
         "STM32",
         "ESP",
         "Arduino",
         "FPGA",
-        "GUI",
         "HMI",
         "MQTT",
-        "Node-Red",
+        "Node-RED",
         "BLE / Bluetooth",
         "LoRa",
-        "ZigBee", 
-        "KiCAD",
+        "ZigBee",
+        "KiCad",
         "RTOS",
         "Embedded Linux",
         "UART / SPI / I2C / Bus",
@@ -182,7 +158,7 @@ export const resumeEn: ResumeData = {
       items: [
         "MATLAB",
         "Qt",
-        "Docker", 
+        "Docker",
         "Vivado",
         "Eclipse",
         "IntelliJ IDEA",
@@ -206,20 +182,20 @@ export const resumeEn: ResumeData = {
 
   volunteering: [
     {
-      title: "Les Enfoiros de l'INSA — Lead Singer & Member",
+      title: "Les Enfoiros de l’INSA — Lead Singer & Member",
       description: "Organization of charity concerts",
       date: "2024 - 2025",
       url: "https://enfoiros.org/",
     },
     {
       title: "BEE Club — Secretary & Member",
-      description: "International students' bureau of INSA Toulouse",
+      description: "International student association at INSA Toulouse",
       date: "2022 - 2024",
       url: "https://www.instagram.com/bee_insatoulouse/",
     },
     {
       title: "Psychedelic Trauma — Singer",
-      description: "Music band pop/rock",
+      description: "Pop/rock music band",
       date: "2023 - 2026",
       url: "",
     },
@@ -227,31 +203,32 @@ export const resumeEn: ResumeData = {
 
   projects: [
     {
-      title: "Quadruped Robot Locomotion (Research project under supervision of the LAAS/CNRS & INSA Toulouse)",
+      title:
+        "Quadruped Robot Locomotion (LAAS/CNRS & INSA Toulouse)",
       tech: "FPGA · AI · Robotics · Embedded Systems",
       description:
-        "Developed perception and researched decision-making systems using a FPGA and a depth camera for an autonomous quadruped robot under embedded constraints (energy, performance).",
+        "Developed perception and decision-making systems using FPGA and depth camera for an autonomous quadruped robot under embedded constraints (energy and performance).",
       date: "2025 - 2026",
       url: "",
     },
     {
-      title: "Embedded Sailboat Control (STM32) - Student Project INSA Toulouse",
-      tech: "C · Assemnly · STM32 · control via UART GPIO/Timers/Interrupts",
+      title: "Embedded Sailboat Control (STM32)",
+      tech: "C · Assembly · STM32 · UART GPIO/Timers/Interrupts",
       description:
-        "Implemented low-level drivers and real-time control on STM32 using direct register manipulation to navigate a model-size sailboat.",
+        "Implemented low-level drivers and real-time control on STM32 using direct register manipulation to control a miniature sailboat.",
       date: "2024 - 2025",
       url: "https://github.com/bongibault-romain/insa-voilier",
     },
     {
-      title: "Smart IoT Gas Sensor - Student Project INSA Toulouse",
-      tech: "LoRa · Embedded Systems/IoTs · KiCad · Node-RED",
+      title: "Smart IoT Gas Sensor",
+      tech: "LoRa · Embedded Systems/IoT · KiCad · Node-RED",
       description:
-        "Designed a complete IoT system from sensor hardware development (nano construction of gas sensor) to wireless data monitoring (Arduino UNO with LoRa communication).",
+        "Designed a complete IoT system from hardware sensor to wireless data monitoring (Arduino UNO with LoRa communication).",
       date: "2025 - 2026",
       url: "https://github.com/MOSH-Insa-Toulouse/2025-2026-5ISS-MEETOO-MIRANVILLE-REVELLI",
     },
     {
-      title: "Embedded Fall Detection with AI - Student Project INSA Toulouse",
+      title: "Embedded Fall Detection with AI",
       tech: "Python · TensorFlow · CNN · Edge AI",
       description:
         "Designed and optimized a CNN model for real-time fall detection under energy and storage constraints.",
@@ -259,10 +236,10 @@ export const resumeEn: ResumeData = {
       url: "",
     },
     {
-      title: "Signal Processing in a laser gun game - Student Project INSA Toulouse",
+      title: "Signal Processing for a Laser Game",
       tech: "MATLAB · FFT · Signal Processing",
       description:
-        "Implemented frequency-based detection using FFT to identify multiple signals in noisy environments to allocate points through targets using a laser gun.",
+        "Implemented frequency detection using FFT to identify multiple signals in a noisy environment and assign points to targets.",
       date: "2024",
       url: "https://github.com/AnyaMeetoo492/BE_CHTI",
     },
