@@ -7,7 +7,7 @@ import type { ContactInfo } from "../types/resume";
 interface HeaderProps {
   name: string;
   title: string;
-  contact: ContactInfo;
+  contact?: ContactInfo;
   profileImage?: string;
 }
 
