@@ -2,7 +2,7 @@
 
 /** Contact details for the resume header. */
 export interface ContactInfo {
-  email: string;
+  email?: string;
   portfolio?: string;
   location?: string;
   github?: string;
