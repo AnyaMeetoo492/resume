@@ -7,11 +7,11 @@ import qrCode from "./qr_code.jpg";
 export const resumeFr: ResumeData = {
   name: "Anya Meetoo",
   title:
-    "Étudiante en génie informatique | IoT, développement logiciel, systèmes embarqués, robotique & IA | Diplôme prévu pour septembre 2026",
+    "Étudiante en génie informatique & réseaux - IoT, développement logiciel, systèmes embarqués, robotique & IA - Diplôme prévu pour septembre 2026",
   profileImage: profilePic,
   qrCodeImage: qrCode,
   summary:
-    "Étudiante en génie informatique à l’INSA Toulouse, spécialisée en IoT et systèmes embarqués, je m’intéresse à la programmation bas niveau, aux systèmes temps réel et à l’intégration matériel/logiciel. J’ai des compétences en C, C++, Python, Rust et Assembleur grâce à plusieurs projets. Je cherche une opportunité en ingénierie logicielle embarquée/objets connectés en France à partir de septembre/octobre 2026.",
+    "Étudiante en génie informatique & réseaux à l’INSA Toulouse, spécialisée en IoT et systèmes embarqués, je m’intéresse à la programmation bas niveau, aux systèmes temps réel et à l’intégration matériel/logiciel. J’ai des compétences en C, C++, Python, Rust et Assembleur grâce à plusieurs projets. Je cherche une opportunité en ingénierie logicielle embarquée/objets connectés en France à partir de septembre/octobre 2026.",
 
   contact: {
     email: "anyameetoo@gmail.com",
@@ -90,7 +90,7 @@ export const resumeFr: ResumeData = {
   education: [
     {
       degree:
-        "Diplôme d’ingénieur – Informatique (spécialité Systèmes Intelligents Innovants)",
+        "Diplôme d’ingénieur Informatique & Réseaux (spécialité Systèmes Intelligents Innovants)",
       institution: "INSA Toulouse - IR/ISS",
       institutionUrl: "https://www.insa-toulouse.fr/",
       period: "2022 - 2026",
