@@ -1,8 +1,5 @@
 // Erwin Lejeune - 2026-02-15
 
-import type { ReactNode } from "react";
-import { Mail, Globe, MapPin, Github, Linkedin } from "lucide-react";
-
 interface HeaderProps {
   name: string;
   title: string;
@@ -11,12 +8,8 @@ interface HeaderProps {
 
 /** Top section of the resume: profile picture on left, name/title/contact on right. */
 export function Header({ name, title, profileImage }: HeaderProps) {
-  const linkClass = "hover:text-accent transition-colors";
-  const iconSize = 13;
 
   // Build contact items dynamically so we only render what exists.
-
-
   return (
     <header className="mb-8 sm:mb-10 print:mb-6">
       <div className="flex flex-col sm:flex-row sm:items-start gap-6 sm:gap-8">
