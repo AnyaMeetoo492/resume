@@ -188,6 +188,7 @@ export default function App() {
               
               <Contact 
                 contact={contact}
+                title={labels[lang].contact}
               />
               
               <EducationSection
