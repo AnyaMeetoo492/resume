@@ -1,72 +1,63 @@
-import type { ReactNode } from "react";
-import { Mail, Globe, MapPin, Github, Linkedin } from "lucide-react";
 import type { ContactInfo } from "../types/resume";
+import { Section } from "./Section";
+import { Mail, Globe, MapPin, Github, Linkedin } from "lucide-react";
 
-interface ContactProps {
+interface ContactSectionProps {
   contact?: ContactInfo;
+  title: string;
 }
 
-export function Contact({ contact = {} }: ContactProps) {
-  const linkClass = "hover:text-accent transition-colors";
+export function ContactSection({ contact = {}, title }: ContactSectionProps) {
   const iconSize = 13;
-
-  const items: ReactNode[] = [];
-
-  if (contact.email) {
-    items.push(
-      <a key="email" href={`mailto:${contact.email}`} className={`inline-flex items-center gap-1 ${linkClass}`}>
-        <Mail size={iconSize} />
-        {contact.email}
-      </a>
-    );
-  }
-
-  if (contact.portfolio) {
-    items.push(
-      <a key="portfolio" href={contact.portfolio} target="_blank" className={`inline-flex items-center gap-1 ${linkClass}`}>
-        <Globe size={iconSize} />
-        {contact.portfolio.replace(/^https?:\/\/(www\.)?/, "")}
-      </a>
-    );
-  }
-
-  if (contact.github) {
-    items.push(
-      <a key="github" href={contact.github} target="_blank" className={`inline-flex items-center gap-1 ${linkClass}`}>
-        <Github size={iconSize} />
-        {contact.github.replace(/^https?:\/\/(www\.)?/, "")}
-      </a>
-    );
-  }
-
-  if (contact.linkedin) {
-    items.push(
-      <a key="linkedin" href={contact.linkedin} target="_blank" className={`inline-flex items-center gap-1 ${linkClass}`}>
-        <Linkedin size={iconSize} />
-        {contact.linkedin.replace(/^https?:\/\/(www\.)?/, "")}
-      </a>
-    );
-  }
-
-  if (contact.linktree) {
-    items.push(
-      <a key="linktree" href={contact.linktree} target="_blank" className={`inline-flex items-center gap-1 ${linkClass}`}>
-        <Globe size={iconSize} />
-        {contact.linktree.replace(/^https?:\/\/(www\.)?/, "")}
-      </a>
-    );
-  }
+  const linkClass = "inline-flex items-center gap-1 hover:text-accent transition-colors";
 
   return (
-    <div className="text-xs text-muted flex flex-col gap-1">
-      {items}
+    <Section title={title}>
+      <div className="space-y-2 text-xs text-muted">
+        
+        {contact.email && (
+          <a href={`mailto:${contact.email}`} className={linkClass}>
+            <Mail size={iconSize} />
+            {contact.email}
+          </a>
+        )}
 
-      {contact.location && (
-        <div className="mt-1 inline-flex items-center gap-1">
-          <MapPin size={iconSize} />
-          {contact.location}
-        </div>
-      )}
-    </div>
+        {contact.linkedin && (
+          <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className={linkClass}>
+            <Linkedin size={iconSize} />
+            {contact.linkedin.replace(/^https?:\/\/(www\.)?/, "")}
+          </a>
+        )}
+
+        {contact.github && (
+          <a href={contact.github} target="_blank" rel="noopener noreferrer" className={linkClass}>
+            <Github size={iconSize} />
+            {contact.github.replace(/^https?:\/\/(www\.)?/, "")}
+          </a>
+        )}
+
+        {contact.portfolio && (
+          <a href={contact.portfolio} target="_blank" rel="noopener noreferrer" className={linkClass}>
+            <Globe size={iconSize} />
+            {contact.portfolio.replace(/^https?:\/\/(www\.)?/, "")}
+          </a>
+        )}
+
+        {contact.linktree && (
+          <a href={contact.linktree} target="_blank" rel="noopener noreferrer" className={linkClass}>
+            <Globe size={iconSize} />
+            {contact.linktree.replace(/^https?:\/\/(www\.)?/, "")}
+          </a>
+        )}
+
+        {contact.location && (
+          <div className="inline-flex items-center gap-1">
+            <MapPin size={iconSize} />
+            {contact.location}
+          </div>
+        )}
+
+      </div>
+    </Section>
   );
 }
