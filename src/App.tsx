@@ -163,7 +163,7 @@ export default function App() {
               <Header
                 name={name}
                 title={title}
-                contact={contact}
+                {/* contact={contact} */}
                 profileImage={profileImage}
               />
               
@@ -185,6 +185,23 @@ export default function App() {
             
             {/* Sidebar */}
             <aside>
+
+                <div className="mb-4">
+                  <h2 className="text-sm font-semibold uppercase tracking-wide mb-2">
+                    {labels[lang].contact}
+                  </h2>
+              
+                  <ul className="text-sm space-y-1">
+                    {contact.email && <li>{contact.email}</li>}
+                    {contact.phone && <li>{contact.phone}</li>}
+                    {contact.linkedin && <li>{contact.linkedin}</li>}
+                    {contact.github && <li>{contact.github}</li>}
+                    {contact.website && <li>{contact.website}</li>}
+                    {contact.location && <li>{contact.location}</li>}
+                  </ul>
+                </div>
+
+              
               <EducationSection
                 education={education}
                 title={labels[lang].education}
