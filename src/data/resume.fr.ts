@@ -228,7 +228,7 @@ export const resumeFr: ResumeData = {
   projects: [
     {
       title:
-        "Locomotion d’un robot quadrupède (projet de recherche encadré par le LAAS/CNRS & INSA Toulouse)",
+        "Locomotion d’un robot quadrupède (LAAS/CNRS & INSA Toulouse)",
       tech: "FPGA · IA · Robotique · Systèmes embarqués",
       description:
         "Développement de systèmes de perception et de prise de décision utilisant une FPGA et une caméra de profondeur pour un robot quadrupède autonome sous contraintes embarquées (énergie, performance).",
@@ -236,7 +236,7 @@ export const resumeFr: ResumeData = {
       url: "",
     },
     {
-      title: "Contrôle d’un voilier embarqué (STM32) - Projet étudiant INSA Toulouse",
+      title: "Contrôle d’un voilier embarqué (STM32)",
       tech: "C · Assembleur · STM32 · contrôle via UART GPIO/Timers/Interruptions",
       description:
         "Implémentation de drivers bas niveau et contrôle temps réel sur STM32 via manipulation directe des registres pour piloter un voilier miniature.",
@@ -244,7 +244,7 @@ export const resumeFr: ResumeData = {
       url: "https://github.com/bongibault-romain/insa-voilier",
     },
     {
-      title: "Capteur de gaz IoT intelligent - Projet étudiant INSA Toulouse",
+      title: "Capteur de gaz IoT intelligent",
       tech: "LoRa · Systèmes embarqués/IoT · KiCad · Node-RED",
       description:
         "Conception d’un système IoT complet depuis le matériel capteur jusqu’à la surveillance des données sans fil (Arduino UNO avec communication LoRa).",
@@ -252,7 +252,7 @@ export const resumeFr: ResumeData = {
       url: "https://github.com/MOSH-Insa-Toulouse/2025-2026-5ISS-MEETOO-MIRANVILLE-REVELLI",
     },
     {
-      title: "Détection de chute embarquée avec IA - Projet étudiant INSA Toulouse",
+      title: "Détection de chute embarquée avec IA",
       tech: "Python · TensorFlow · CNN · Edge AI",
       description:
         "Conception et optimisation d’un modèle CNN pour la détection de chutes en temps réel sous contraintes d’énergie et de stockage.",
@@ -260,7 +260,7 @@ export const resumeFr: ResumeData = {
       url: "",
     },
     {
-      title: "Traitement du signal dans un jeu de laser - Projet étudiant INSA Toulouse",
+      title: "Traitement du signal dans un jeu de laser",
       tech: "MATLAB · FFT · Traitement du signal",
       description:
         "Implémentation d’une détection fréquentielle via FFT pour identifier plusieurs signaux dans un environnement bruité et attribuer des points à des cibles.",
