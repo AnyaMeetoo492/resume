@@ -157,7 +157,7 @@ export default function App() {
       {/* Page */}
       <div ref={pageRef} className="page">
         <div className="px-5 py-8 sm:px-10 sm:py-10 md:px-14 md:py-12 print:px-4 print:py-5">
-          <div className="grid grid-cols-1 md:grid-cols-[1fr_250px] print:grid-cols-[1fr_250px] gap-x-10 print:gap-x-8 gap-y-2 print:gap-y-0">
+          <div className="grid grid-cols-1 md:grid-cols-[2fr_1fr] print:grid-cols-[1fr_250px] gap-x-10 print:gap-x-8 gap-y-2 print:gap-y-0">
             {/* Main column */}
             <div>
               <Header
