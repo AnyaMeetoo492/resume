@@ -1,3 +1,9 @@
+// Erwin Lejeune - 2026-02-15
+
+import type { ResumeData } from "../types/resume";
+import profilePic from "./profile.jpg";
+import qrCode from "./qr_code.jpg";
+
 export const resumeEn: ResumeData = {
   name: "Anya Meetoo",
   title:
