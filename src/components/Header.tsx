@@ -87,14 +87,14 @@ export function Header({ name, title, contact, profileImage }: HeaderProps) {
       </a>,
     );
   }
-  if (contact.location) {
-    items.push(
-      <span key="location" className="inline-flex items-center gap-1">
-        <MapPin size={iconSize} className="shrink-0" />
-        {contact.location}
-      </span>,
-    );
-  }
+  // if (contact.location) {
+  //   items.push(
+  //     <span key="location" className="inline-flex items-center gap-1">
+  //       <MapPin size={iconSize} className="shrink-0" />
+  //       {contact.location}
+  //     </span>,
+  //   );
+  // }
 
   return (
     <header className="mb-8 sm:mb-10 print:mb-6">
@@ -119,18 +119,22 @@ export function Header({ name, title, contact, profileImage }: HeaderProps) {
             {title}
           </p>
 
-          <div className="mt-3 flex flex-nowrap overflow-x-auto whitespace-nowrap justify-center sm:justify-start gap-3 text-xs text-muted">
+          <div className="mt-3 flex flex-wrap justify-center sm:justify-start gap-x-3 gap-y-1 text-xs text-muted">
             {items.map((item, idx) => (
               <span key={idx} className="inline-flex items-center">
-                {idx > 0 && (
-                  <span aria-hidden className="mx-2 sm:mx-3 text-divider">
-                    &middot;
-                  </span>
-                )}
+                {idx > 0 && <span className="mx-2 text-divider">·</span>}
                 {item}
               </span>
             ))}
           </div>
+            {contact.location && (
+              <div className="mt-1 text-xs text-muted flex justify-center sm:justify-start">
+                <span className="inline-flex items-center gap-1">
+                  <MapPin size={iconSize} className="shrink-0" />
+                  {contact.location}
+                </span>
+              </div>
+            )}
         </div>
       </div>
     </header>
