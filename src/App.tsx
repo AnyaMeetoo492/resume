@@ -163,7 +163,6 @@ export default function App() {
               <Header
                 name={name}
                 title={title}
-                contact={}
                 profileImage={profileImage}
               />
               
