@@ -77,16 +77,14 @@ function ExperienceEntry({ entry }: { entry: Experience }) {
         <p className="text-xs italic text-accent/80 mt-1">{entry.promotions}</p>
       )}
 
-      <ul className="mt-2 print:mt-1.5 space-y-1 print:space-y-0.5">
+      <p className="mt-2 text-sm leading-relaxed text-primary/85 text-justify">
         {entry.bullets.map((bullet, idx) => (
-          <li
-            key={idx}
-            className="text-sm leading-relaxed text-primary/85 pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-accent"
-          >
+          <span key={idx}>
+            {idx > 0 && " "}
             {renderBulletText(bullet.text)}
-          </li>
+          </span>
         ))}
-      </ul>
+      </p>
     </div>
   );
 }
