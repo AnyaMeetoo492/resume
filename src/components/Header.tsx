@@ -112,14 +112,14 @@ export function Header({ name, title, contact, profileImage }: HeaderProps) {
 
         {/* Text content on the right */}
         <div className="flex-1 text-center sm:text-left">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl print:text-4xl font-bold tracking-tight text-primary leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl print:text-3xl font-bold tracking-tight text-primary leading-tight">
             {name}
           </h1>
           <p className="mt-2 print:mt-1 text-base sm:text-lg print:text-base font-medium text-accent">
             {title}
           </p>
 
-          <div className="mt-4 print:mt-3 flex flex-wrap justify-center sm:justify-start gap-y-1.5 text-xs sm:text-sm print:text-xs text-muted">
+          <div className="mt-3 flex flex-nowrap overflow-x-auto whitespace-nowrap justify-center sm:justify-start gap-3 text-xs text-muted">
             {items.map((item, idx) => (
               <span key={idx} className="inline-flex items-center">
                 {idx > 0 && (
