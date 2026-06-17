@@ -70,4 +70,3 @@ export function Contact({ contact = {} }: ContactProps) {
     </div>
   );
 }
-``
