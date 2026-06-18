@@ -30,7 +30,11 @@ export function Header({ name, title, profileImage }: HeaderProps) {
             {name}
           </h1>
           <p className="mt-2 print:mt-1 text-base sm:text-lg print:text-base font-medium text-accent">
-            {title}
+            {title.split("\n").map((line, i) => (
+              <p key={i} className="mt-1">
+                {line}
+              </p>
+            ))}
           </p>
         </div>
       </div>
