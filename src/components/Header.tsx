@@ -29,13 +29,13 @@ export function Header({ name, title, profileImage }: HeaderProps) {
           <h1 className="text-2xl sm:text-3xl md:text-4xl print:text-3xl font-bold tracking-tight text-primary leading-tight">
             {name}
           </h1>
-          <p className="mt-2 print:mt-1 text-base sm:text-lg print:text-base font-medium text-accent">
+          <div className="mt-2 print:mt-1 text-sm sm:text-base print:text-sm font-medium text-accent">
             {title.split("\n").map((line, i) => (
-              <p key={i} className="mt-1">
+              <div key={i} className="mt-1">
                 {line}
-              </p>
+              </div>
             ))}
-          </p>
+          </div>
         </div>
       </div>
     </header>
