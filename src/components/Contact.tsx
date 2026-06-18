@@ -1,6 +1,6 @@
 import { Section } from "./Section";
 import { ContactInfo } from "./ContactInfo";
-import { Mail } from "lucide-react";
+import { Mail, Globe, MapPin, Github, Linkedin } from "lucide-react";
 
 interface ContactProps {
   contact: {
@@ -32,40 +32,40 @@ export function Contact({ contact, title, qrCodeImage }: ContactProps) {
           )}
 
           {contact.linkedin && (
-            <ContactInfo icon="🔗">
-              <a href={contact.linkedin} target="_blank" rel="noreferrer">
-                LinkedIn
-              </a>
-            </ContactInfo>
+            <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className={linkClass}>
+              <Linkedin size={iconSize} />
+              {contact.linkedin.replace(/^https?:\/\/(www\.)?/, "")}
+            </a>
           )}
 
-          {contact.github && (
-            <ContactInfo icon="💻">
-              <a href={contact.github} target="_blank" rel="noreferrer">
-                GitHub
-              </a>
-            </ContactInfo>
+         {contact.github && (
+            <a href={contact.github} target="_blank" rel="noopener noreferrer" className={linkClass}>
+              <Github size={iconSize} />
+              {contact.github.replace(/^https?:\/\/(www\.)?/, "")}=
+            </a>
           )}
 
           {contact.website && (
-            <ContactInfo icon="🌐">
-              <a href={contact.website} target="_blank" rel="noreferrer">
-                Website
-              </a>
-            </ContactInfo>
+            <a href={contact.website} target="_blank" rel="noopener noreferrer" className={linkClass}>
+              <Globe size={iconSize} />
+              {contact.website.replace(/^https?:\/\/(www\.)?/, "")}
+            </a>
           )}
 
           {contact.linktree && (
-            <ContactInfo icon="🌐">
-              <a href={contact.linktree} target="_blank" rel="noreferrer">
-                {contact.linktree.replace("https://", "")}
-              </a>
-            </ContactInfo>
+            <a href={contact.linktree} target="_blank" rel="noopener noreferrer" className={linkClass}>
+              <Globe size={iconSize} />
+              {contact.linktree.replace(/^https?:\/\/(www\.)?/, "")}
+            </a>
           )}
 
           {contact.location && (
-            <ContactInfo icon="📍">{contact.location}</ContactInfo>
+            <div className="inline-flex items-center gap-1">
+              <MapPin size={iconSize} />
+              {contact.location}
+            </div>
           )}
+          
         </div>
 
         {/* RIGHT */}
