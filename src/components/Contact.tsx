@@ -60,7 +60,7 @@ export function Contact({ contact, title, qrCodeImage }: ContactProps) {
 
           {contact.location && (
             <div className="inline-flex items-center gap-1">
-              <MapPin size={iconSize} />
+              <MapPin size={iconSize*2} />
               {contact.location}
             </div>
           )}
