@@ -1,3 +1,4 @@
+import { Section } from "./Section";
 import { ContactInfo } from "./ContactInfo";
 
 interface ContactProps {
@@ -6,6 +7,7 @@ interface ContactProps {
     linkedin?: string;
     github?: string;
     website?: string;
+    linktree?: string;
     location?: string;
   };
   title: string;
@@ -14,9 +16,7 @@ interface ContactProps {
 
 export function Contact({ contact, title, qrCodeImage }: ContactProps) {
   return (
-    <section className="mt-6">
-      <h2 className="text-sm font-semibold mb-3">{title}</h2>
-
+    <Section title={title}>
       <div className="flex items-start gap-4">
         {/* LEFT */}
         <div className="flex-1 space-y-2 text-sm">
@@ -48,6 +48,14 @@ export function Contact({ contact, title, qrCodeImage }: ContactProps) {
             </ContactInfo>
           )}
 
+          {contact.linktree && (
+            <ContactInfo icon="🌐">
+              <a href={contact.linktree} target="_blank" rel="noreferrer">
+                {contact.linktree.replace("https://", "")}
+              </a>
+            </ContactInfo>
+          )}
+
           {contact.location && (
             <ContactInfo icon="📍">{contact.location}</ContactInfo>
           )}
@@ -56,10 +64,14 @@ export function Contact({ contact, title, qrCodeImage }: ContactProps) {
         {/* RIGHT */}
         {qrCodeImage && (
           <div className="flex-shrink-0">
-            <img src={qrCodeImage} className="w-20 h-20" />
+            <img
+              src={qrCodeImage}
+              alt="QR Code"
+              className="w-20 h-20 object-cover"
+            />
           </div>
         )}
       </div>
-    </section>
+    </Section>
   );
 }
