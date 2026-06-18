@@ -228,7 +228,7 @@ export default function App() {
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline">
-              GitHub Repo
+              GitHub Repo CV
             </a>
           </span>
       </footer>
