@@ -1,6 +1,6 @@
 import { Section } from "./Section";
 import { ContactInfo } from "./ContactInfo";
-import { Mail, Globe, MapPin, Github, Linkedin } from "lucide-react";
+import { Mail } from "lucide-react";
 
 interface ContactProps {
   contact: {
