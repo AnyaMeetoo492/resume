@@ -187,8 +187,8 @@ export default function App() {
             <aside>
               
               <Contact 
-                contact={contact}
-                title={labels[lang].contact}
+                contact={contact} 
+                title={labels[lang].contact} 
               />
               
               <EducationSection
