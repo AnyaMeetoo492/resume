@@ -186,9 +186,10 @@ export default function App() {
             {/* Sidebar */}
             <aside>
               
-              <Contact 
-                contact={contact} 
-                title={labels[lang].contact} 
+              <Contact
+                contact={contact}
+                title={labels[lang].contact}
+                qrCodeImage={qrCodeImage}
               />
               
               <EducationSection
