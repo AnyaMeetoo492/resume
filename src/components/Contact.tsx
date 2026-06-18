@@ -2,19 +2,7 @@ import type { ContactInfo } from "../types/resume";
 import { Section } from "./Section";
 import { Mail, Globe, MapPin, Github, Linkedin } from "lucide-react";
 
-interface ContactProps {
-  contact: {
-    email?: string;
-    linkedin?: string;
-    github?: string;
-    website?: string;
-    location?: string;
-  };
-  title: string;
-  qrCodeImage?: string;
-}
-
-export function Contact({ contact, title, qrCodeImage }: ContactProps) {
+export function Contact({ contact, title, qrCodeImage }: ContactInfo) {
   return (
     <section className="mt-6">
       <h2 className="text-sm font-semibold mb-3">{title}</h2>
