@@ -11,7 +11,9 @@ interface ProfessionalSummaryProps {
 export function ProfessionalSummary({ summary, title }: ProfessionalSummaryProps) {
   return (
     <Section title={title}>
-      <p className="text-sm leading-relaxed text-primary/85">{summary}</p>
+      <p className="text-sm leading-relaxed text-primary/85 text-justify">
+        {summary}
+      </p>
     </Section>
   );
 }
