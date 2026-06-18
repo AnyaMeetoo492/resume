@@ -1,5 +1,6 @@
 import { Section } from "./Section";
 import { ContactInfo } from "./ContactInfo";
+import { Mail, Globe, MapPin, Github, Linkedin } from "lucide-react";
 
 interface ContactProps {
   contact: {
@@ -15,13 +16,19 @@ interface ContactProps {
 }
 
 export function Contact({ contact, title, qrCodeImage }: ContactProps) {
+   const iconSize = 13;
+   const linkClass = "inline-flex items-center gap-1 hover:text-accent transition-colors";
+  
   return (
     <Section title={title}>
       <div className="flex items-start gap-4">
         {/* LEFT */}
         <div className="flex-1 space-y-2 text-sm">
           {contact.email && (
-            <ContactInfo icon="📧">{contact.email}</ContactInfo>
+            <a href={`mailto:${contact.email}`} className={linkClass}>
+              <Mail size={iconSize} />
+              {contact.email}
+            </a>
           )}
 
           {contact.linkedin && (
