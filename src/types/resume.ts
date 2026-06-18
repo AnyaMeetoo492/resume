@@ -1,16 +1,12 @@
 // Erwin Lejeune - 2026-02-15
 
 /** Contact details for the resume header. */
-export interface ContactInfo {
-  contact: {
-    email?: string;
-    linkedin?: string;
-    github?: string;
-    website?: string;
-    location?: string;
-  };
-  title: string;
-  qrCodeImage?: string;
+export interface ContactData {
+  email?: string;
+  linkedin?: string;
+  github?: string;
+  website?: string;
+  location?: string;
 }
 
 /** A single bullet point in a work experience entry. */
@@ -86,7 +82,7 @@ export interface ResumeData {
   summary: string;
   profileImage?: string;
   qrCodeImage?: string;
-  contact: ContactInfo;
+  contact: ContactData;
   experience: Experience[];
   education: Education[];
   publications: Publication[];
