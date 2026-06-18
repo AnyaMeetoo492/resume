@@ -2,62 +2,79 @@ import type { ContactInfo } from "../types/resume";
 import { Section } from "./Section";
 import { Mail, Globe, MapPin, Github, Linkedin } from "lucide-react";
 
-interface ContactSectionProps {
-  contact?: ContactInfo;
+interface ContactProps {
+  contact: {
+    email?: string;
+    linkedin?: string;
+    github?: string;
+    website?: string;
+    location?: string;
+  };
   title: string;
+  qrCodeImage?: string;
 }
 
-export function Contact({ contact = {}, title }: ContactSectionProps) {
-  const iconSize = 13;
-  const linkClass = "inline-flex items-center gap-1 hover:text-accent transition-colors";
-
+export function Contact({ contact, title, qrCodeImage }: ContactProps) {
   return (
-    <Section title={title}>
-      <div className="space-y-2 text-xs text-muted">
-        
-        {contact.email && (
-          <a href={`mailto:${contact.email}`} className={linkClass}>
-            <Mail size={iconSize} />
-            {contact.email}
-          </a>
-        )}
+    <section className="mt-6">
+      <h2 className="text-sm font-semibold mb-3">{title}</h2>
 
-        {contact.linkedin && (
-          <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className={linkClass}>
-            <Linkedin size={iconSize} />
-            {contact.linkedin.replace(/^https?:\/\/(www\.)?/, "")}
-          </a>
-        )}
+      <div className="flex items-start gap-4">
+        {/* LEFT: contact info */}
+        <div className="flex-1 space-y-2 text-sm">
+          {contact.email && (
+            <div className="flex items-center gap-2">
+              <span>📧</span>
+              <span>{contact.email}</span>
+            </div>
+          )}
 
-        {contact.github && (
-          <a href={contact.github} target="_blank" rel="noopener noreferrer" className={linkClass}>
-            <Github size={iconSize} />
-            {contact.github.replace(/^https?:\/\/(www\.)?/, "")}
-          </a>
-        )}
+          {contact.linkedin && (
+            <div className="flex items-center gap-2">
+              <span>🔗</span>
+              <a href={contact.linkedin} target="_blank" rel="noreferrer">
+                LinkedIn
+              </a>
+            </div>
+          )}
 
-        {contact.portfolio && (
-          <a href={contact.portfolio} target="_blank" rel="noopener noreferrer" className={linkClass}>
-            <Globe size={iconSize} />
-            {contact.portfolio.replace(/^https?:\/\/(www\.)?/, "")}
-          </a>
-        )}
+          {contact.github && (
+            <div className="flex items-center gap-2">
+              <span>💻</span>
+              <a href={contact.github} target="_blank" rel="noreferrer">
+                GitHub
+              </a>
+            </div>
+          )}
 
-        {contact.linktree && (
-          <a href={contact.linktree} target="_blank" rel="noopener noreferrer" className={linkClass}>
-            <Globe size={iconSize} />
-            {contact.linktree.replace(/^https?:\/\/(www\.)?/, "")}
-          </a>
-        )}
+          {contact.website && (
+            <div className="flex items-center gap-2">
+              <span>🌐</span>
+              <a href={contact.website} target="_blank" rel="noreferrer">
+                Website
+              </a>
+            </div>
+          )}
 
-        {contact.location && (
-          <div className="inline-flex items-center gap-1">
-            <MapPin size={iconSize} />
-            {contact.location}
+          {contact.location && (
+            <div className="flex items-center gap-2">
+              <span>📍</span>
+              <span>{contact.location}</span>
+            </div>
+          )}
+        </div>
+
+        {/* RIGHT: QR code */}
+        {qrCodeImage && (
+          <div className="flex-shrink-0">
+            <img
+              src={qrCodeImage}
+              alt="QR Code"
+              className="w-24 h-24 object-cover rounded-sm shadow-sm"
+            />
           </div>
         )}
-
       </div>
-    </Section>
+    </section>
   );
 }
