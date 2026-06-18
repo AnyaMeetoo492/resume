@@ -6,6 +6,7 @@ export interface ContactData {
   linkedin?: string;
   github?: string;
   website?: string;
+  linktree?: string;
   location?: string;
 }
 
