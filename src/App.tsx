@@ -220,8 +220,9 @@ export default function App() {
         </div>
       </div>
 
-      <footer className="max-w-[1200px] mx-auto mt-4 px-4 text-xs text-muted flex justify-between items-center print:hidden">
-            <span>© {new Date().getFullYear()} Anya Meetoo</span>
+      <footer className="max-w-[1200px] mx-auto mt-4 px-4 text-xs text-muted text-center print:hidden">
+          <span>
+            © {new Date().getFullYear()} Anya Meetoo -{" "}
             <a
               href="https://github.com/AnyaMeetoo492/resume"
               target="_blank"
@@ -229,6 +230,7 @@ export default function App() {
               className="hover:underline">
               GitHub Repo
             </a>
+          </span>
       </footer>
     </>
   );
