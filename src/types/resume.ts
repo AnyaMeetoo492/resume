@@ -1,7 +1,7 @@
 // Erwin Lejeune - 2026-02-15
 
 /** Contact details for the resume header. */
-interface ContactInfo {
+export interface ContactInfo {
   contact: {
     email?: string;
     linkedin?: string;
