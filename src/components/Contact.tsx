@@ -67,11 +67,13 @@ export function Contact({ contact, title, qrCodeImage }: ContactProps) {
         {/* RIGHT: QR code */}
         {qrCodeImage && (
           <div className="flex-shrink-0">
-            <img
-              src={qrCodeImage}
-              alt="QR Code"
-              className="w-24 h-24 object-cover rounded-sm shadow-sm"
-            />
+            <a href={contact.website} target="_blank">
+              <img
+                src={qrCodeImage}
+                alt="QR Code"
+                className="w-24 h-24 object-cover rounded-sm shadow-sm"
+              />
+            </a>
           </div>
         )}
       </div>
