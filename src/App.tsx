@@ -220,7 +220,7 @@ export default function App() {
         </div>
       </div>
 
-      <footer className="max-w-[1200px] mx-auto mt-4 px-4 text-xs text-muted text-center print:hidden">
+      <footer className="max-w-[1200px] mx-auto mt-2 mb-6 px-4 text-xs text-muted text-center print:hidden">
           <span>
             © {new Date().getFullYear()} Anya Meetoo -{" "}
             <a
