@@ -1,3 +1,5 @@
+import React from "react";
+
 interface ContactInfoProps {
   icon: React.ReactNode;
   children: React.ReactNode;
