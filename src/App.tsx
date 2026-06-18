@@ -15,7 +15,6 @@ import {
   Interests,
   Languages,
   Projects,
-  QRCode,
   Contact,
 } from "./components";
 
