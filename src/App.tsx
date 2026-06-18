@@ -190,17 +190,17 @@ export default function App() {
                 title={labels[lang].contact}
                 qrCodeImage={qrCodeImage}
               />
-              
-              <EducationSection
-                education={education}
-                title={labels[lang].education}
-              />
             
               <Languages
                 languages={languages}
                 title={labels[lang].languages}
               />
-            
+
+              <EducationSection
+                education={education}
+                title={labels[lang].education}
+              />
+              
               <Skills
                 skills={skills}
                 title={labels[lang].skills}
