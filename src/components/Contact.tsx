@@ -40,6 +40,14 @@ export function Contact({ contact, title, qrCodeImage }: ContactProps) {
             </ContactInfo>
           )}
 
+          {contact.linktree && (
+            <ContactInfo icon="🌐">
+              <a href={contact.linktree} target="_blank" rel="noreferrer">
+                linktr.ee/anyameetoo
+              </a>
+            </ContactInfo>
+          )}
+
           {contact.website && (
             <ContactInfo icon="🌐">
               <a href={contact.website} target="_blank" rel="noreferrer">
