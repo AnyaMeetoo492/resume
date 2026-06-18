@@ -40,7 +40,7 @@ export function Contact({ contact, title, qrCodeImage }: ContactProps) {
          {contact.github && (
             <a href={contact.github} target="_blank" rel="noopener noreferrer" className={linkClass}>
               <Github size={iconSize} />
-              {contact.github.replace(/^https?:\/\/(www\.)?/, "")}=
+              {contact.github.replace(/^https?:\/\/(www\.)?/, "")}
             </a>
           )}
 
