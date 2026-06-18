@@ -30,7 +30,7 @@
   /* On larger screens: float the sheet with shadow */
   @media (min-width: 1270px) {
     .page {
-      @apply my-10 rounded-sm shadow-[0_2px_20px_rgba(0,0,0,0.08)];
+      @apply mt-10 mb-3 rounded-sm shadow-[0_2px_20px_rgba(0,0,0,0.08)];
     }
   }
 
