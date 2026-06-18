@@ -15,3 +15,4 @@ export { Languages } from "./Languages";
 export { Projects } from "./Projects";
 export { ProfilePicture } from "./ProfilePicture";
 export { Contact } from "./Contact";
+export { ContactInfo } from "./ContactInfo";
