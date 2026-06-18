@@ -216,10 +216,6 @@ export default function App() {
                 interests={interests}
                 title={labels[lang].interests}
               />
-            
-              {qrCodeImage && (
-                <QRCode imageUrl={qrCodeImage} alt="Contact QR Code" title={labels[lang].qrcode} />
-              )}
             </aside>
           </div>
         </div>
