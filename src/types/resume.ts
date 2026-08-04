@@ -80,6 +80,7 @@ export interface Interest {
 export interface ResumeData {
   name: string;
   title: string;
+  description: string;
   summary: string;
   profileImage?: string;
   qrCodeImage?: string;
