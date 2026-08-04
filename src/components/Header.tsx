@@ -1,41 +1,41 @@
 // Erwin Lejeune - 2026-02-15
 
+// Erwin Lejeune - 2026-02-15
+
 interface HeaderProps {
   name: string;
   title: string;
+  description?: string;
   profileImage?: string;
 }
 
-/** Top section of the resume: profile picture on left, name/title/contact on right. */
-export function Header({ name, title, profileImage }: HeaderProps) {
-
-  // Build contact items dynamically so we only render what exists.
+export function Header({
+  name,
+  title,
+  description,
+  profileImage,
+}: HeaderProps) {
   return (
-    <header className="mb-8 sm:mb-10 print:mb-6">
-      <div className="flex flex-col sm:flex-row sm:items-start gap-6 sm:gap-8">
-        {/* Profile picture on the left */}
+    <header className="mb-10">
+      <div className="flex items-center gap-8">
         {profileImage && (
-          <div className="flex-shrink-0">
-            <img
-              src={profileImage}
-              alt={name}
-              className="w-28 h-28 sm:w-32 sm:h-32 rounded-full shadow-md object-cover"
-            />
-          </div>
+          {profileImage}
         )}
 
-        {/* Text content on the right */}
-        <div className="flex-1 text-center sm:text-left">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl print:text-3xl font-bold tracking-tight text-primary leading-tight">
+        <div className="flex-1">
+          <h1 className="text-5xl font-extrabold tracking-tight text-slate-900 leading-none">
             {name}
           </h1>
-          <div className="mt-2 print:mt-1 text-sm sm:text-base print:text-sm font-medium text-accent">
-            {title.split("\n").map((line, i) => (
-              <div key={i} className="mt-1">
-                {line}
-              </div>
-            ))}
-          </div>
+
+          <h2 className="mt-3 text-xl font-semibold text-pink-600">
+            {title}
+          </h2>
+
+          {description && (
+            <p className="mt-2 text-sm text-slate-600 max-w-2xl leading-relaxed">
+              {description}
+            </p>
+          )}
         </div>
       </div>
     </header>
