@@ -7,7 +7,9 @@ import qrCode from "./qr_code.jpg";
 export const resumeEn: ResumeData = {
   name: "Anya Meetoo",
   title:
-    "Computer Science & Networks Engineering Student \nIoT, Software Development, Embedded Systems, Robotics & AI \nExpected Graduation: September 2026",
+    "Computer Science & Networks Engineering Student",
+  description:
+    "IoT, Software Development, Embedded Systems, Robotics & AI \nExpected Graduation: September 2026",
   profileImage: profilePic,
   qrCodeImage: qrCode,
   summary:
