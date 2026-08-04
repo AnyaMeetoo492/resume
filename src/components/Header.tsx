@@ -20,7 +20,9 @@ export function Header({
         {/* Profile picture on the left */}
         {profileImage && (
           <div className="flex-shrink-0">
-            {profileImage}
+            {profileImage} alt={name}
+              className="w-28 h-28 sm:w-32 sm:h-32 rounded-full shadow-md object-cover"
+            />
           </div>
         )}
 
