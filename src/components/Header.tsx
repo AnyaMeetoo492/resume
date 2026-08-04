@@ -20,12 +20,14 @@ export function Header({
         {/* Profile picture on the left */}
         {profileImage && (
           <div className="flex-shrink-0">
-            {profileImage} alt={name}
+            <img
+              src={profileImage}
+              alt={name}
               className="w-28 h-28 sm:w-32 sm:h-32 rounded-full shadow-md object-cover"
             />
           </div>
         )}
-
+        
         {/* Text content on the right */}
         <div className="flex-1 text-center sm:text-left">
           <h1 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-primary leading-none">
