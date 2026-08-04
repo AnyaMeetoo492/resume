@@ -17,9 +17,14 @@ export function Header({
 }: HeaderProps) {
   return (
     <header className="mb-10">
-      <div className="flex items-center gap-8">
-        {profileImage && (
-          {profileImage}
+      {profileImage && (
+          <div className="flex-shrink-0">
+            <img
+              src={profileImage}
+              alt={name}
+              className="w-28 h-28 sm:w-32 sm:h-32 rounded-full shadow-md object-cover"
+            />
+          </div>
         )}
 
         <div className="flex-1">
