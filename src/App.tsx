@@ -61,6 +61,7 @@ export default function App() {
   const {
     name,
     title,
+    description,
     summary,
     contact,
     experience,
@@ -163,6 +164,7 @@ export default function App() {
               <Header
                 name={name}
                 title={title}
+                description={description}
                 profileImage={profileImage}
               />
               
