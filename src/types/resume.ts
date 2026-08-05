@@ -32,6 +32,7 @@ export interface Education {
   institution: string;
   institutionUrl?: string;
   period: string;
+  logo?: string;
 }
 
 /** A published paper, article, or conference contribution. */
