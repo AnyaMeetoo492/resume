@@ -4,11 +4,11 @@ import type { ResumeData } from "../types/resume";
 import profilePic from "./profile.jpg";
 import qrCode from "./qr_code.jpg";
 
-import picRobotQudruped from "./profile.jpg";
-import picVoilier from "./profile.jpg";
-import picCapteurGaz from "./profile.jpg";
-import picChuteIA from "./profile.jpg";
-import picPistoletLaser from "./profile.jpg";
+import picRobotQudruped from "./picRobotQudruped.jpg";
+import picVoilier from "./picVoilier.jpg";
+import picCapteurGaz from "./picCapteurGaz.png";
+import picChuteIA from "./picChuteIA.jpg";
+import picPistoletLaser from "./picPistoletLaser.jpg";
 
 export const resumeFr: ResumeData = {
   name: "Anya Meetoo",
