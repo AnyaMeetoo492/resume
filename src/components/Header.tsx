@@ -40,16 +40,22 @@ export function Header({
             {title}
           </h2>
 
-          {description && (
-            <p className="mt-2 text-sm text-slate-600 leading-relaxed max-w-2xl">
-              {description}
-            </p>
-          )}
-
-          {graduation && (
-            <p className="mt-2 text-sm text-slate-600 leading-relaxed max-w-2xl">
-              {graduation}
-            </p>
+          {(description || graduation) && (
+            <div className="mt-2 text-sm text-slate-600 leading-relaxed max-w-2xl">
+              {description && (
+                <p>
+                  <span className="font-semibold text-primary">
+                    {description}
+                  </span>
+                </p>
+              )}
+          
+              {graduation && (
+                <p className="mt-1">
+                  {graduation}
+                </p>
+              )}
+            </div>
           )}
         </div>
       </div>
