@@ -10,6 +10,10 @@ import picCapteurGaz from "./picCapteurGaz.png";
 import picChuteIA from "./picChuteIA.png";
 import picPistoletLaser from "./picPistoletLaser.jpg";
 
+import logoINSA from "./logoINSA.png";
+import logoUT3 from "./logoUT3.png";
+import logoLCQB from "./logoLCQB.jpeg";
+
 export const resumeFr: ResumeData = {
   name: "Anya Meetoo",
   title:
@@ -104,12 +108,14 @@ export const resumeFr: ResumeData = {
       institution: "INSA Toulouse - IR/ISS",
       institutionUrl: "https://www.insa-toulouse.fr/",
       period: "2022 - 2026",
+      logo: logoINSA,
     },
     {
       degree: "Licence 1 – Informatique",
       institution: "Université Paul Sabatier Toulouse III",
       institutionUrl: "https://www.univ-tlse3.fr/",
       period: "2021 - 2022",
+      logo: logoUT3,
     },
     {
       degree:
@@ -117,6 +123,7 @@ export const resumeFr: ResumeData = {
       institution: "Loreto College Quatre Bornes",
       institutionUrl: "",
       period: "2014 - 2021",
+      logo: logoLCQB,
     },
   ],
 
