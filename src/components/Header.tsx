@@ -4,6 +4,7 @@ interface HeaderProps {
   name: string;
   title: string;
   description?: string;
+  graduation?: string;
   profileImage?: string;
 }
 
@@ -12,6 +13,7 @@ export function Header({
   name,
   title,
   description,
+  graduation,
   profileImage,
 }: HeaderProps) {
   return (
@@ -41,6 +43,12 @@ export function Header({
           {description && (
             <p className="mt-2 text-sm text-slate-600 leading-relaxed max-w-2xl">
               {description}
+            </p>
+          )}
+
+          {graduation && (
+            <p className="mt-2 text-sm text-slate-600 leading-relaxed max-w-2xl">
+              {graduation}
             </p>
           )}
         </div>
