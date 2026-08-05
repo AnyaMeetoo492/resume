@@ -2,17 +2,15 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  /* Texte */
-  --color-primary: #1e293b;
+  --color-primary: #0f172a;
   --color-muted: #64748b;
    
-  /* Accent inspiré de ton portfolio */
-  --color-accent: #7f2aeb;
+  /* Violet plus sobre */
+  --color-accent: #6d28d9;
    
-  /* Fond */
   --color-surface: #ffffff;
-  --color-divider: #dbe4f0;
-   --color-page-bg: #eef2ff;
+  --color-divider: #e2e8f0;
+  --color-page-bg: #f8fafc;
 }
 
 @layer base {
