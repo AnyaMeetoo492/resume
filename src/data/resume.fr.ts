@@ -13,9 +13,11 @@ import picPistoletLaser from "./picPistoletLaser.jpg";
 export const resumeFr: ResumeData = {
   name: "Anya Meetoo",
   title:
-    "Étudiante en génie informatique & réseaux",
+    "Ingénieure Informatique & Réseaux",
   description: 
-    "IoT, Développement Logiciel, Systèmes Embarqués, Robotique & IA \nDiplôme prévu pour septembre 2026",
+    "IoT & Objets Connectés, Systèmes Embarqués, Développement Logiciel, Robotique & IA",
+  graduation:
+    "Diplôme prévu pour septembre 2026",
   profileImage: profilePic,
   qrCodeImage: qrCode,
   summary:
