@@ -4,6 +4,12 @@ import type { ResumeData } from "../types/resume";
 import profilePic from "./profile.jpg";
 import qrCode from "./qr_code.jpg";
 
+import picRobotQudruped from "./profile.jpg";
+import picVoilier from "./profile.jpg";
+import picCapteurGaz from "./profile.jpg";
+import picChuteIA from "./profile.jpg";
+import picPistoletLaser from "./profile.jpg";
+
 export const resumeFr: ResumeData = {
   name: "Anya Meetoo",
   title:
@@ -218,6 +224,7 @@ export const resumeFr: ResumeData = {
         "Développement de systèmes de perception et de prise de décision utilisant une FPGA et une caméra de profondeur pour un robot quadrupède autonome sous contraintes embarquées (énergie, performance).",
       date: "2025 - 2026",
       url: "",
+      image: picRobotQudruped, 
     },
     {
       title: "Contrôle d’un voilier embarqué (STM32)",
@@ -226,6 +233,7 @@ export const resumeFr: ResumeData = {
         "Implémentation de drivers bas niveau et contrôle temps réel sur STM32 via manipulation directe des registres pour piloter un voilier miniature.",
       date: "2024 - 2025",
       url: "https://github.com/bongibault-romain/insa-voilier",
+      image: picVoilier, 
     },
     {
       title: "Capteur de gaz IoT intelligent",
@@ -234,6 +242,7 @@ export const resumeFr: ResumeData = {
         "Conception d’un système IoT complet depuis le matériel capteur jusqu’à la surveillance des données sans fil (Arduino UNO avec communication LoRa).",
       date: "2025 - 2026",
       url: "https://github.com/MOSH-Insa-Toulouse/2025-2026-5ISS-MEETOO-MIRANVILLE-REVELLI",
+      image: picCapteurGaz, 
     },
     {
       title: "Détection de chute embarquée avec IA",
@@ -242,6 +251,7 @@ export const resumeFr: ResumeData = {
         "Conception et optimisation d’un modèle CNN pour la détection de chutes en temps réel sous contraintes d’énergie et de stockage.",
       date: "2025 - 2026",
       url: "",
+      image: picChuteIA, 
     },
     {
       title: "Traitement du signal dans un jeu de laser",
@@ -250,6 +260,7 @@ export const resumeFr: ResumeData = {
         "Implémentation d’une détection fréquentielle via FFT pour identifier plusieurs signaux dans un environnement bruité et attribuer des points à des cibles.",
       date: "2024",
       url: "https://github.com/AnyaMeetoo492/BE_CHTI",
+      image: picPistoletLaser, 
     },
   ],
 };
