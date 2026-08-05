@@ -14,7 +14,11 @@ function ProjectEntry({ project }: { project: Project }) {
       {/* Left image */}
       {project.image && (
         <div className="shrink-0">
-          {project.image}
+          <img
+            src={project.image}
+            alt={project.title}
+            className="w-24 h-24 object-cover rounded-md border border-gray-200"
+          />
         </div>
       )}
 
@@ -23,12 +27,15 @@ function ProjectEntry({ project }: { project: Project }) {
         {/* Title + Date */}
         <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5">
           <h3 className="text-sm font-semibold text-primary inline-flex items-center gap-1.5">
-            {project.url && (
-              <Favicon url={project.url} size={13} />
-            )}
+            {project.url && <Favicon url={project.url} size={13} />}
 
             {project.url ? (
-              {project.url}
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:underline"
+              >
                 {project.title}
               </a>
             ) : (
@@ -42,9 +49,7 @@ function ProjectEntry({ project }: { project: Project }) {
         </div>
 
         {/* Tech stack */}
-        <p className="text-xs text-muted mt-0.5">
-          {project.tech}
-        </p>
+        <p className="text-xs text-muted mt-0.5">{project.tech}</p>
 
         {/* Description */}
         <ul className="mt-2 print:mt-1.5 space-y-1">
