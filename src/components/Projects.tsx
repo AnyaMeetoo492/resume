@@ -7,40 +7,26 @@ interface ProjectsProps {
   title: string;
 }
 
-function ProjectEntry({
-  project,
-  index,
-}: {
-  project: Project;
-  index: number;
-}) {
-  const reverse = index % 2 === 1;
-
+/** Renders a single project entry */
+function ProjectEntry({ project }: { project: Project }) {
   return (
-    <div
-      className={`flex gap-4 items-start mb-4 ${
-        reverse ? "flex-row-reverse" : ""
-      }`}
-    >
-      {/* Image */}
+    <div className="flex gap-4 mb-5 print:mb-3 last:mb-0">
+      {/* Left image */}
       {project.image && (
         <div className="shrink-0">
           <img
             src={project.image}
             alt={project.title}
-            className="w-20 h-20 object-cover rounded-md"
+            className="w-24 h-24 object-cover rounded-md border border-gray-200"
           />
         </div>
       )}
 
-      {/* Contenu */}
+      {/* Right content */}
       <div className="flex-1 min-w-0">
-        <div className="flex justify-between items-baseline gap-3">
-          <h3
-            className={`text-sm font-semibold text-primary inline-flex items-center gap-1.5 ${
-              reverse ? "justify-end" : ""
-            }`}
-          >
+        {/* Title + Date */}
+        <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-0.5">
+          <h3 className="text-sm font-semibold text-primary inline-flex items-center gap-1.5">
             {project.url && <Favicon url={project.url} size={13} />}
 
             {project.url ? (
@@ -62,31 +48,26 @@ function ProjectEntry({
           </span>
         </div>
 
-        <p
-          className={`text-xs text-muted mt-0.5 ${
-            reverse ? "text-right" : ""
-          }`}
-        >
-          {project.tech}
-        </p>
+        {/* Tech stack */}
+        <p className="text-xs text-muted mt-0.5">{project.tech}</p>
 
-        <p
-          className={`mt-1 text-sm leading-relaxed text-primary/85 ${
-            reverse ? "text-right" : ""
-          }`}
-        >
-          • {project.description}
-        </p>
+        {/* Description */}
+        <ul className="mt-2 print:mt-1.5 space-y-1">
+          <li className="text-sm leading-relaxed text-primary/85 pl-4 relative before:content-['•'] before:absolute before:left-0 before:text-accent">
+            {project.description}
+          </li>
+        </ul>
       </div>
     </div>
   );
 }
 
+/** Projects section */
 export function Projects({ projects, title }: ProjectsProps) {
   return (
     <Section title={title}>
       {projects.map((project, idx) => (
-        <ProjectEntry key={idx} project={project} index={idx} />
+        <ProjectEntry key={idx} project={project} />
       ))}
     </Section>
   );
