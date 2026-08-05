@@ -29,6 +29,8 @@ function ProjectEntry({ project }: { project: Project }) {
 
             {project.url ? (
               {project.url}
+                {project.title}
+              </a>
             ) : (
               project.title
             )}
