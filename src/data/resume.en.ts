@@ -95,7 +95,7 @@ export const resumeEn: ResumeData = {
       period: "July 2022",
       bullets: [
         {
-          text: "Introduced to full-stack web development (HTML, CSS, C#, SQL) through small web application projects.",
+          text: "Introduced to full-stack web development (HTML, CSS, C#, SQL) through small web app projects.",
         },
       ],
     },
