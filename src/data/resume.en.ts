@@ -16,7 +16,7 @@ export const resumeEn: ResumeData = {
     "Computer Science & Networks Engineering Student",
   description:
     "IoT & Smart Devices, Embedded Systems, Software Development, Robotics & AI",
-  gaduation: 
+  graduation: 
     "Expected Graduation in September 2026",
   profileImage: profilePic,
   qrCodeImage: qrCode,
