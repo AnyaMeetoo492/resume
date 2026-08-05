@@ -4,6 +4,12 @@ import type { ResumeData } from "../types/resume";
 import profilePic from "./profile.jpg";
 import qrCode from "./qr_code.jpg";
 
+import picRobotQudruped from "./profile.jpg";
+import picVoilier from "./profile.jpg";
+import picCapteurGaz from "./profile.jpg";
+import picChuteIA from "./profile.jpg";
+import picPistoletLaser from "./profile.jpg";
+
 export const resumeEn: ResumeData = {
   name: "Anya Meetoo",
   title:
@@ -218,6 +224,7 @@ export const resumeEn: ResumeData = {
         "Developed perception and decision-making systems using FPGA and depth camera for an autonomous quadruped robot under embedded constraints (energy and performance).",
       date: "2025 - 2026",
       url: "",
+      image: picRobotQudruped, 
     },
     {
       title: "Embedded Sailboat Control (STM32)",
@@ -226,6 +233,7 @@ export const resumeEn: ResumeData = {
         "Implemented low-level drivers and real-time control on STM32 using direct register manipulation to control a miniature sailboat.",
       date: "2024 - 2025",
       url: "https://github.com/bongibault-romain/insa-voilier",
+      image: picVoilier,
     },
     {
       title: "Smart IoT Gas Sensor",
@@ -234,6 +242,7 @@ export const resumeEn: ResumeData = {
         "Designed a complete IoT system from hardware sensor to wireless data monitoring (Arduino UNO with LoRa communication).",
       date: "2025 - 2026",
       url: "https://github.com/MOSH-Insa-Toulouse/2025-2026-5ISS-MEETOO-MIRANVILLE-REVELLI",
+      image: picCapteurGaz,
     },
     {
       title: "Embedded Fall Detection with AI",
@@ -242,6 +251,7 @@ export const resumeEn: ResumeData = {
         "Designed and optimized a CNN model for real-time fall detection under energy and storage constraints.",
       date: "2025 - 2026",
       url: "",
+      image: picChuteIA,
     },
     {
       title: "Signal Processing for a Laser Game",
@@ -250,6 +260,7 @@ export const resumeEn: ResumeData = {
         "Implemented frequency detection using FFT to identify multiple signals in a noisy environment and assign points to targets.",
       date: "2024",
       url: "https://github.com/AnyaMeetoo492/BE_CHTI",
+      image: picPistoletLaser,
     },
   ],
 };
