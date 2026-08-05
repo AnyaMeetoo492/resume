@@ -15,7 +15,7 @@ export const resumeFr: ResumeData = {
   title:
     "Ingénieure Informatique & Réseaux",
   description: 
-    "IoT & Objets Connectés, Systèmes Embarqués, Développement Logiciel, Robotique & IA",
+    "IoT & Objets Connectés, Systèmes Embarqués, Robotique & IA",
   graduation:
     "Diplôme prévu pour septembre 2026",
   profileImage: profilePic,
