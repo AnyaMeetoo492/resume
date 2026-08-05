@@ -69,6 +69,7 @@ export interface Project {
   description: string;
   date: string;
   url?: string;
+  image?: string;
 }
 
 /** A group of current interests */
