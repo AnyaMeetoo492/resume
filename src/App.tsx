@@ -62,6 +62,7 @@ export default function App() {
     name,
     title,
     description,
+    graduation, 
     summary,
     contact,
     experience,
@@ -165,6 +166,7 @@ export default function App() {
                 name={name}
                 title={title}
                 description={description}
+                graduation={graduation}
                 profileImage={profileImage}
               />
               
