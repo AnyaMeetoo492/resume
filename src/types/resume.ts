@@ -81,6 +81,7 @@ export interface Interest {
 export interface ResumeData {
   name: string;
   title: string;
+  graduation?: string;
   description?: string;
   summary: string;
   profileImage?: string;
