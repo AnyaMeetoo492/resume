@@ -18,7 +18,7 @@ function ProjectEntry({
 
   return (
     <div
-      className={`flex items-center gap-6 mb-8 ${
+      className={`flex gap-4 items-start mb-4 ${
         reverse ? "flex-row-reverse" : ""
       }`}
     >
@@ -28,20 +28,19 @@ function ProjectEntry({
           <img
             src={project.image}
             alt={project.title}
-            className="w-32 h-32 object-cover rounded-lg shadow-sm"
+            className="w-20 h-20 object-cover rounded-md"
           />
         </div>
       )}
 
-      {/* Content */}
-      <div className={`flex-1 ${reverse ? "text-right" : "text-left"}`}>
-        {/* Titre + date */}
-        <div
-          className={`flex items-start justify-between gap-4 ${
-            reverse ? "flex-row-reverse" : ""
-          }`}
-        >
-          <h3 className="text-sm font-semibold text-primary inline-flex items-center gap-1.5">
+      {/* Contenu */}
+      <div className="flex-1 min-w-0">
+        <div className="flex justify-between items-baseline gap-3">
+          <h3
+            className={`text-sm font-semibold text-primary inline-flex items-center gap-1.5 ${
+              reverse ? "justify-end" : ""
+            }`}
+          >
             {project.url && <Favicon url={project.url} size={13} />}
 
             {project.url ? (
@@ -63,25 +62,26 @@ function ProjectEntry({
           </span>
         </div>
 
-        {/* Technologies */}
-        <p className="text-xs text-muted mt-1">{project.tech}</p>
+        <p
+          className={`text-xs text-muted mt-0.5 ${
+            reverse ? "text-right" : ""
+          }`}
+        >
+          {project.tech}
+        </p>
 
-        {/* Description */}
-        <ul className="mt-2">
-          <li
-            className={`text-sm leading-relaxed text-primary/85 relative ${
-              reverse ? "pr-4 before:right-0" : "pl-4 before:left-0"
-            } before:content-['•'] before:absolute before:text-accent`}
-          >
-            {project.description}
-          </li>
-        </ul>
+        <p
+          className={`mt-1 text-sm leading-relaxed text-primary/85 ${
+            reverse ? "text-right" : ""
+          }`}
+        >
+          • {project.description}
+        </p>
       </div>
     </div>
   );
 }
 
-/** Projects section */
 export function Projects({ projects, title }: ProjectsProps) {
   return (
     <Section title={title}>
