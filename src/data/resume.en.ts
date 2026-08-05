@@ -6,7 +6,7 @@ import qrCode from "./qr_code.jpg";
 
 import picRobotQudruped from "./profile.jpg";
 import picVoilier from "./profile.jpg";
-import picCapteurGaz from "./profile.jpg";
+import picCapteurGaz from "./PCB_Kicad.png";
 import picChuteIA from "./profile.jpg";
 import picPistoletLaser from "./profile.jpg";
 
