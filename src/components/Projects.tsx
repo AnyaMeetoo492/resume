@@ -14,10 +14,7 @@ function ProjectEntry({ project }: { project: Project }) {
       {/* Left image */}
       {project.image && (
         <div className="shrink-0">
-          project.image}
-            alt={project.title}
-            className="w-24 h-24 object-cover rounded-md border border-gray-200"
-          />
+          {project.image}
         </div>
       )}
 
