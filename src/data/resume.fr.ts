@@ -4,10 +4,10 @@ import type { ResumeData } from "../types/resume";
 import profilePic from "./profile.jpg";
 import qrCode from "./qr_code.jpg";
 
-import picRobotQudruped from "./picRobotQudruped.jpg";
-import picVoilier from "./picVoilier.jpg";
+import picRobotQudruped from "./picRobotQudruped.png";
+import picVoilier from "./picVoilier.png";
 import picCapteurGaz from "./picCapteurGaz.png";
-import picChuteIA from "./picChuteIA.jpg";
+import picChuteIA from "./picChuteIA.png";
 import picPistoletLaser from "./picPistoletLaser.jpg";
 
 export const resumeFr: ResumeData = {
