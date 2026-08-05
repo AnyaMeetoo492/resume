@@ -2,9 +2,9 @@
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --color-primary: #1e293b;
-  --color-accent: #f72585;
-  --color-muted: #64748b;
+  --color-primary: #1e293b; /* Texte principal */
+  --color-accent: #2563eb; /* Bleu professionnel */
+  --color-muted: #64748b; /* Texte secondaire */
   --color-surface: #f8fafc;
   --color-divider: #e2e8f0;
   --color-page-bg: #e5e7eb;
