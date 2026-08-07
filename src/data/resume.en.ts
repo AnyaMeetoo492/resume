@@ -1,18 +1,18 @@
 // Erwin Lejeune - 2026-02-15
 
 import type { ResumeData } from "../types/resume";
-import profilePic from "./profile.jpg";
-import qrCode from "./qr_code.jpg";
+import profilePic from "./images/profile.jpg";
+import qrCode from "./images/qr_code.jpg";
 
-import picRobotQudruped from "./picRobotQudruped.png";
-import picVoilier from "./picVoilier.png";
-import picCapteurGaz from "./picCapteurGaz.png";
-import picChuteIA from "./picChuteIA.png";
-import picPistoletLaser from "./picPistoletLaser.jpg";
+import picRobotQudruped from "./images/picRobotQudruped.png";
+import picVoilier from "./images/picVoilier.png";
+import picCapteurGaz from "./images/picCapteurGaz.png";
+import picChuteIA from "./images/picChuteIA.png";
+import picPistoletLaser from "./images/picPistoletLaser.jpg";
 
-import logoINSA from "./logoINSA.png";
-import logoUT3 from "./logoUT3.png";
-import logoLCQB from "./logoLCQB.jpeg";
+import logoINSA from "./images/logoINSA.png";
+import logoUT3 from "./images/logoUT3.png";
+import logoLCQB from "./images/logoLCQB.jpeg";
 
 export const resumeEn: ResumeData = {
   name: "Anya Meetoo",
