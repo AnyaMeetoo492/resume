@@ -104,7 +104,7 @@ export const resumeEn: ResumeData = {
   education: [
     {
       degree:
-        "Engineering Degree in Computer Science & Networks (Intelligent and Innovative Systems)",
+        "Engineering Degree in Computer Science & Networks (Innovative Smart Systems)",
       institution: "INSA Toulouse - IR/ISS",
       institutionUrl: "https://www.insa-toulouse.fr/",
       period: "2022 - 2026",
