@@ -17,7 +17,7 @@ import logoLCQB from "./images/logoLCQB.jpeg";
 export const resumeEn: ResumeData = {
   name: "Anya Meetoo",
   title:
-    "Computer Science & Networks Engineering Student",
+    "Computer Science & Networks Engineering",
   description:
     "IoT & Smart Devices, Embedded Systems, Robotics & AI",
   graduation: 
